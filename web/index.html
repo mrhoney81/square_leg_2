@@ -496,7 +496,21 @@ function getSelected() {
 
   // T1-only mode: only include tier T1 targets (nuclear counterforce)
   if (t1OnlyMode) {
-    return { selected: allTargets.filter(t => t.tier === 'T1'), excluded: [] };
+    if (!skipCities) {
+      return { selected: allTargets.filter(t => t.tier === 'T1'), excluded: [] };
+    }
+    const selected = [];
+    const excluded = [];
+    for (const t of allTargets) {
+      if (t.tier !== 'T1') continue;
+      const ex = cache.get(t.id);
+      if (ex && ex.excluded) {
+        excluded.push({ target: t, reason: ex.reason });
+      } else {
+        selected.push(t);
+      }
+    }
+    return { selected, excluded };
   }
 
   if (!skipCities) {
