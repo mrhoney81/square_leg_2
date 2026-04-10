@@ -1,0 +1,4637 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8267,
+          56.0669
+        ]
+      },
+      "properties": {
+        "id": "A03",
+        "name": "HMNB Clyde (Faslane)",
+        "cat": "A",
+        "subcat": "SSBN operating base",
+        "tier": "T1",
+        "priority": 1,
+        "yield_kt": 475,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Sole Royal Navy SSBN and SSN operating base. Single point of failure for UK deterrent at sea. Airburst to destroy submarines in port and base infrastructure.",
+        "notes": "Multi-warhead strike likely. Also cat E (naval base).",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8792,
+          56.055
+        ]
+      },
+      "properties": {
+        "id": "A04",
+        "name": "RNAD Coulport",
+        "cat": "A",
+        "subcat": "Warhead storage",
+        "tier": "T1",
+        "priority": 2,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Strategic warhead storage and torpedo loading for Trident submarines. 8 miles from Faslane.",
+        "notes": "",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1394,
+          51.3683
+        ]
+      },
+      "properties": {
+        "id": "A01",
+        "name": "AWE Aldermaston",
+        "cat": "A",
+        "subcat": "Warhead design/production",
+        "tier": "T1",
+        "priority": 3,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK nuclear warhead design, plutonium processing, tritium. Sprawling above-ground campus — airburst sufficient.",
+        "notes": "Companion to Burghfield (assembly).",
+        "sources": "AWE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0544,
+          51.3989
+        ]
+      },
+      "properties": {
+        "id": "A02",
+        "name": "AWE Burghfield",
+        "cat": "A",
+        "subcat": "Warhead assembly",
+        "tier": "T1",
+        "priority": 4,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK warhead final assembly and dismantling. Sole site for this function. Soft industrial target.",
+        "notes": "",
+        "sources": "AWE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1833,
+          50.3833
+        ]
+      },
+      "properties": {
+        "id": "A05",
+        "name": "HMNB Devonport",
+        "cat": "A",
+        "subcat": "SSN refit + nuclear drydock",
+        "tier": "T1",
+        "priority": 5,
+        "yield_kt": 475,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Largest naval base in Western Europe. Only UK facility able to refit nuclear submarines. Airburst to destroy drydocks and ships in refit.",
+        "notes": "Also cat E (naval base). Adjacent Plymouth city (I37).",
+        "sources": "Babcock, RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2347,
+          54.113
+        ]
+      },
+      "properties": {
+        "id": "A06",
+        "name": "BAE Systems Barrow-in-Furness",
+        "cat": "A",
+        "subcat": "SSBN/SSN construction",
+        "tier": "T1",
+        "priority": 6,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Sole UK shipyard building nuclear submarines (Astute-class SSN, Dreadnought-class SSBN). Irreplaceable industrial capability. Soft industrial site — airburst sufficient.",
+        "notes": "Also cat H (defence industry).",
+        "sources": "BAE Systems"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.43,
+          52.9175
+        ]
+      },
+      "properties": {
+        "id": "A07",
+        "name": "Rolls-Royce Raynesway, Derby",
+        "cat": "A",
+        "subcat": "Naval reactor production",
+        "tier": "T1",
+        "priority": 7,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Only UK facility producing naval nuclear reactor cores (PWR2/PWR3). Sole-source supplier for SSN/SSBN propulsion. Soft industrial site.",
+        "notes": "Also cat H. Adjacent Derby city (I20).",
+        "sources": "Rolls-Royce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.561,
+          52.4093
+        ]
+      },
+      "properties": {
+        "id": "B01",
+        "name": "RAF Lakenheath",
+        "cat": "B",
+        "subcat": "USAF strike (F-35A, B61-12)",
+        "tier": "T1",
+        "priority": 8,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "48th FW: F-35As joining F-15Es. Reportedly hosting B61-12 gravity bombs from 2024. Largest USAF combat base in Europe.",
+        "notes": "Also cat D (RAF base).",
+        "sources": "USAFE, open sources"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.67,
+          54.3614
+        ]
+      },
+      "properties": {
+        "id": "B05",
+        "name": "RAF Fylingdales",
+        "cat": "B",
+        "subcat": "BMEWS early warning radar",
+        "tier": "T1",
+        "priority": 9,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Solid-state phased array radar (SSPARS). Part of US Ballistic Missile Early Warning System and Space Surveillance Network.",
+        "notes": "Also cat G. Hardened structure — groundburst.",
+        "sources": "MoD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6883,
+          54.0086
+        ]
+      },
+      "properties": {
+        "id": "B04",
+        "name": "RAF Menwith Hill",
+        "cat": "B",
+        "subcat": "NSA/GCHQ SIGINT station",
+        "tier": "T2",
+        "priority": 10,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Largest NSA station outside the US. 30+ radomes. ECHELON/FIVE EYES overhead SIGINT processing hub. SIGINT, not directly nuclear forces.",
+        "notes": "Also cat G (radar/SIGINT).",
+        "sources": "NSA, public record"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4172,
+          51.605
+        ]
+      },
+      "properties": {
+        "id": "C02",
+        "name": "Northwood HQ",
+        "cat": "C",
+        "subcat": "PJHQ + NATO MARCOM",
+        "tier": "T2",
+        "priority": 11,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "UK Permanent Joint Headquarters (all UK joint ops) and NATO Maritime Command. Global military command node.",
+        "notes": "",
+        "sources": "MoD, NATO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1244,
+          51.8986
+        ]
+      },
+      "properties": {
+        "id": "C06",
+        "name": "GCHQ Cheltenham",
+        "cat": "C",
+        "subcat": "SIGINT HQ",
+        "tier": "T2",
+        "priority": 12,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "GCHQ Doughnut. UK signals intelligence and cyber HQ. Five Eyes keystone. Modern above-ground office complex — airburst sufficient.",
+        "notes": "",
+        "sources": "GCHQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8072,
+          51.6344
+        ]
+      },
+      "properties": {
+        "id": "C03",
+        "name": "RAF High Wycombe (Air Command HQ)",
+        "cat": "C",
+        "subcat": "RAF headquarters",
+        "tier": "T2",
+        "priority": 13,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HQ Air Command. Command and control of all RAF operational forces. Underground operations centre.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.128,
+          51.504
+        ]
+      },
+      "properties": {
+        "id": "C01",
+        "name": "PINDAR / Whitehall (Cabinet Office)",
+        "cat": "C",
+        "subcat": "Crisis command bunker",
+        "tier": "T2",
+        "priority": 14,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Cabinet Office crisis management centre under MoD Main Building. Part of 3-GZ London strike. COBR/COBRA crisis management.",
+        "notes": "Overlap with London GZ 2 (I02).",
+        "sources": "Declassified records"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8158,
+          52.0897
+        ]
+      },
+      "properties": {
+        "id": "C09",
+        "name": "Credenhill (22 SAS / UKSF HQ)",
+        "cat": "C",
+        "subcat": "UK Special Forces HQ",
+        "tier": "T2",
+        "priority": 15,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HQ 22 SAS Regiment and UK Special Forces since 1999. UKSF operational base and strategic reserve capability.",
+        "notes": "",
+        "sources": "Public record"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.125,
+          51.4942
+        ]
+      },
+      "properties": {
+        "id": "C07",
+        "name": "MI5 Thames House",
+        "cat": "C",
+        "subcat": "Security Service HQ",
+        "tier": "T2",
+        "priority": 16,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "MI5 headquarters, Millbank. Internal security decapitation.",
+        "notes": "Covered by London GZ 2 (I02).",
+        "sources": "Public record"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1244,
+          51.4872
+        ]
+      },
+      "properties": {
+        "id": "C08",
+        "name": "MI6 Vauxhall Cross",
+        "cat": "C",
+        "subcat": "SIS HQ",
+        "tier": "T2",
+        "priority": 17,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "MI6 / SIS headquarters. Foreign intelligence decapitation.",
+        "notes": "Covered by London GZ 2 (I02).",
+        "sources": "Public record"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4961,
+          54.4208
+        ]
+      },
+      "properties": {
+        "id": "K01",
+        "name": "Sellafield",
+        "cat": "K",
+        "subcat": "Reprocessing + legacy high-level waste",
+        "tier": "T2",
+        "priority": 18,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Magnox reprocessing, THORP, ~140 tonnes Pu stored, high-level waste tanks, legacy ponds. Single most radiologically hazardous target in the UK. Groundburst to contaminate site and deny access.",
+        "notes": "Arguably strategic counterforce-level target due to Pu inventory.",
+        "sources": "NDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.84,
+          57.5544
+        ]
+      },
+      "properties": {
+        "id": "L06",
+        "name": "St Fergus Gas Terminal",
+        "cat": "L",
+        "subcat": "Gas import terminal",
+        "tier": "T2",
+        "priority": 19,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "~40% of UK gas lands here via North Sea and Norwegian Vesterled pipeline. Destroying it collapses UK gas supply. Strategic energy chokepoint.",
+        "notes": "Hardened/buried pipework — groundburst.",
+        "sources": "National Gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5561,
+          50.7919
+        ]
+      },
+      "properties": {
+        "id": "N01",
+        "name": "Widemouth Bay cable landing (Cornwall)",
+        "cat": "N",
+        "subcat": "Transatlantic cable bundle",
+        "tier": "T2",
+        "priority": 20,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Primary UK transatlantic cable bundle: TAT-14, Apollo North, Yellow, FLAG Atlantic, AEConnect. Severs most UK-US fibre capacity.",
+        "notes": "GCHQ Bude 3 miles north (G07).",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1092,
+          50.8036
+        ]
+      },
+      "properties": {
+        "id": "E01",
+        "name": "HMNB Portsmouth",
+        "cat": "E",
+        "subcat": "Carrier + fleet base",
+        "tier": "T2",
+        "priority": 21,
+        "yield_kt": 475,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Home port of QE-class carriers, Type 45 destroyers, Type 23/26 frigates. Airburst to destroy ships in port and dockyard infrastructure.",
+        "notes": "Also cat C (Navy Command nearby) and cat I (Portsmouth city I38).",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1658,
+          53.093
+        ]
+      },
+      "properties": {
+        "id": "D01",
+        "name": "RAF Coningsby",
+        "cat": "D",
+        "subcat": "Typhoon QRA South",
+        "tier": "T2",
+        "priority": 22,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Quick Reaction Alert (South). Multiple Typhoon squadrons. Battle of Britain Memorial Flight.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3392,
+          57.7053
+        ]
+      },
+      "properties": {
+        "id": "D02",
+        "name": "RAF Lossiemouth",
+        "cat": "D",
+        "subcat": "Typhoon QRA North + P-8 Poseidon",
+        "tier": "T2",
+        "priority": 23,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "QRA (Interceptor) North. All UK P-8A Poseidon maritime patrol aircraft. Covers GIUK gap ASW.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5506,
+          52.6486
+        ]
+      },
+      "properties": {
+        "id": "D03",
+        "name": "RAF Marham",
+        "cat": "D",
+        "subcat": "F-35B Lightning force",
+        "tier": "T2",
+        "priority": 24,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "617 Sqn and 207 OCU F-35B Lightning. UK's principal strike aircraft base.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5236,
+          53.1662
+        ]
+      },
+      "properties": {
+        "id": "D04",
+        "name": "RAF Waddington",
+        "cat": "D",
+        "subcat": "ISTAR / intelligence aircraft",
+        "tier": "T2",
+        "priority": 25,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "RC-135W Rivet Joint SIGINT, Sentinel R1, Shadow R2, Protector RG1 RPAS. All UK airborne intelligence assets.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5836,
+          51.75
+        ]
+      },
+      "properties": {
+        "id": "D05",
+        "name": "RAF Brize Norton",
+        "cat": "D",
+        "subcat": "Strategic transport + tanker",
+        "tier": "T2",
+        "priority": 26,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK strategic air transport hub. Voyager tanker, C-17, A400M Atlas. Sole air bridge for power projection.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9428,
+          51.2344
+        ]
+      },
+      "properties": {
+        "id": "D06",
+        "name": "RAF Odiham",
+        "cat": "D",
+        "subcat": "Chinook heavy-lift",
+        "tier": "T2",
+        "priority": 27,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Sole Chinook HC6/6A operating base. Critical heavy helicopter lift for land forces.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4864,
+          52.3614
+        ]
+      },
+      "properties": {
+        "id": "B02",
+        "name": "RAF Mildenhall",
+        "cat": "B",
+        "subcat": "USAF tankers + AFSOC",
+        "tier": "T2",
+        "priority": 28,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "100th ARW (KC-135 tankers) and 352nd SOW (special operations). 7 miles from Lakenheath.",
+        "notes": "",
+        "sources": "USAFE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1872,
+          51.9856
+        ]
+      },
+      "properties": {
+        "id": "B03",
+        "name": "RAF Croughton",
+        "cat": "B",
+        "subcat": "USAF global comms relay",
+        "tier": "T2",
+        "priority": 29,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "USAF 422nd ABG. Major satellite relay hub linking European and CONUS command networks. NSA presence.",
+        "notes": "",
+        "sources": "USAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3844,
+          51.4714
+        ]
+      },
+      "properties": {
+        "id": "B06",
+        "name": "RAF Welford",
+        "cat": "B",
+        "subcat": "USAF conventional munitions storage",
+        "tier": "T2",
+        "priority": 30,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Largest USAF conventional munitions storage site in Europe. 100+ earth-covered bunkers. Nuclear weapons stored in WS3 vaults at operating bases, not here.",
+        "notes": "",
+        "sources": "USAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.79,
+          51.6822
+        ]
+      },
+      "properties": {
+        "id": "B10",
+        "name": "RAF Fairford",
+        "cat": "B",
+        "subcat": "USAF strategic bomber forward base",
+        "tier": "T2",
+        "priority": 31,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Forward operating location for US strategic bombers (B-52, B-2, B-1B). Routine rotations. Longest military runway in UK. Soft airfield target.",
+        "notes": "",
+        "sources": "USAFE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2292,
+          52.3719
+        ]
+      },
+      "properties": {
+        "id": "B07",
+        "name": "RAF Alconbury",
+        "cat": "B",
+        "subcat": "USAF intelligence",
+        "tier": "T2",
+        "priority": 32,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "501st CSW. Co-located with Joint Analysis Center Molesworth. USAF intelligence fusion for EUCOM/AFRICOM.",
+        "notes": "Effectively same complex as B08 Molesworth.",
+        "sources": "USAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4114,
+          52.3761
+        ]
+      },
+      "properties": {
+        "id": "B08",
+        "name": "RAF Molesworth",
+        "cat": "B",
+        "subcat": "Joint Analysis Center",
+        "tier": "T2",
+        "priority": 33,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Joint Analysis Center — primary USAF intelligence facility in UK. 3 miles west of Alconbury.",
+        "notes": "",
+        "sources": "USAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5386,
+          52.4914
+        ]
+      },
+      "properties": {
+        "id": "B09",
+        "name": "RAF Feltwell",
+        "cat": "B",
+        "subcat": "USSF Space Surveillance + support",
+        "tier": "T2",
+        "priority": 34,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "5th Space Surveillance Squadron optical telescope site. Housing and support functions for Lakenheath/Mildenhall cluster.",
+        "notes": "",
+        "sources": "USSF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8839,
+          53.7453
+        ]
+      },
+      "properties": {
+        "id": "H01",
+        "name": "BAE Systems Warton",
+        "cat": "H",
+        "subcat": "Typhoon/F-35 final assembly + Tempest",
+        "tier": "T2",
+        "priority": 35,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Typhoon Eurofighter final assembly, F-35 rear fuselage production, GCAP/Tempest development. UK's principal combat aircraft plant.",
+        "notes": "Adjacent to Samlesbury (H02).",
+        "sources": "BAE Systems"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5733,
+          53.7761
+        ]
+      },
+      "properties": {
+        "id": "H02",
+        "name": "BAE Systems Samlesbury",
+        "cat": "H",
+        "subcat": "F-35 + Typhoon fuselage",
+        "tier": "T2",
+        "priority": 36,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "F-35B rear fuselage and Typhoon airframe structures. Sister site to Warton 12 miles away.",
+        "notes": "",
+        "sources": "BAE Systems"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3533,
+          55.8753
+        ]
+      },
+      "properties": {
+        "id": "H03",
+        "name": "BAE Systems Scotstoun",
+        "cat": "H",
+        "subcat": "Type 26/31 frigates",
+        "tier": "T2",
+        "priority": 37,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Assembly of Type 26 City-class frigates (ASW hull). Adjacent to Govan.",
+        "notes": "Adjacent to H04 Govan on Clyde.",
+        "sources": "BAE Systems"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3075,
+          55.8681
+        ]
+      },
+      "properties": {
+        "id": "H04",
+        "name": "BAE Systems Govan",
+        "cat": "H",
+        "subcat": "Type 26/31 frigates",
+        "tier": "T2",
+        "priority": 38,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Hull block fabrication for Type 26 frigates. Paired operation with Scotstoun on the Clyde.",
+        "notes": "",
+        "sources": "BAE Systems"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2019,
+          51.9033
+        ]
+      },
+      "properties": {
+        "id": "H06",
+        "name": "MBDA Stevenage",
+        "cat": "H",
+        "subcat": "Missile design HQ",
+        "tier": "T2",
+        "priority": 39,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "MBDA UK HQ and design centre. Meteor, Brimstone, CAMM/Sea Ceptor, SPEAR, legacy Storm Shadow. UK's primary missile design capability.",
+        "notes": "",
+        "sources": "MBDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4844,
+          51.2089
+        ]
+      },
+      "properties": {
+        "id": "C04",
+        "name": "Army HQ Andover (Marlborough Lines)",
+        "cat": "C",
+        "subcat": "British Army HQ",
+        "tier": "T2",
+        "priority": 40,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HQ British Army at Marlborough Lines, Andover. Top-level army command.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1,
+          50.85
+        ]
+      },
+      "properties": {
+        "id": "C05",
+        "name": "Navy Command Portsmouth (Portsdown Hill)",
+        "cat": "C",
+        "subcat": "Royal Navy HQ",
+        "tier": "T2",
+        "priority": 41,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HQ Navy Command on Portsdown Hill. Royal Navy operational command node.",
+        "notes": "Partially covered by HMNB Portsmouth strike (E01).",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9436,
+          50.6992
+        ]
+      },
+      "properties": {
+        "id": "C10",
+        "name": "RM Poole (SBS HQ)",
+        "cat": "C",
+        "subcat": "UK Special Forces (maritime)",
+        "tier": "T2",
+        "priority": 42,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HQ Special Boat Service. UK maritime special forces base.",
+        "notes": "",
+        "sources": "Public record"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5544,
+          50.8911
+        ]
+      },
+      "properties": {
+        "id": "G07",
+        "name": "GCHQ Bude (Morwenstow satellite station)",
+        "cat": "G",
+        "subcat": "Satellite SIGINT + cable tap",
+        "tier": "T2",
+        "priority": 43,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "GCHQ satellite intercept station. Adjacent to primary transatlantic cable landings (Widemouth Bay). Taps both satellite and undersea fibre.",
+        "notes": "Also cat N.",
+        "sources": "GCHQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4839,
+          54.2567
+        ]
+      },
+      "properties": {
+        "id": "G08",
+        "name": "GCHQ Scarborough (Irton Moor)",
+        "cat": "G",
+        "subcat": "HF SIGINT",
+        "tier": "T2",
+        "priority": 44,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "HF direction-finding and SIGINT station. Part of GCHQ's regional collection network.",
+        "notes": "",
+        "sources": "GCHQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6389,
+          51.0094
+        ]
+      },
+      "properties": {
+        "id": "E02",
+        "name": "RNAS Yeovilton",
+        "cat": "E",
+        "subcat": "Wildcat + Commando Helicopter",
+        "tier": "T2",
+        "priority": 45,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Wildcat HMA2 maritime attack and Commando Helicopter Force (Merlin Mk4). RM aviation.",
+        "notes": "",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2564,
+          50.0864
+        ]
+      },
+      "properties": {
+        "id": "E03",
+        "name": "RNAS Culdrose",
+        "cat": "E",
+        "subcat": "Merlin ASW + AEW",
+        "tier": "T2",
+        "priority": 46,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Merlin HM2 ASW and Crowsnest AEW helicopters. Largest helicopter base in Europe.",
+        "notes": "",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1667,
+          50.8333
+        ]
+      },
+      "properties": {
+        "id": "E04",
+        "name": "HMS Collingwood (Fareham)",
+        "cat": "E",
+        "subcat": "Maritime Warfare School",
+        "tier": "T2",
+        "priority": 47,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Maritime Warfare School and weapons engineering. Largest Royal Navy training establishment.",
+        "notes": "",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1544,
+          50.8094
+        ]
+      },
+      "properties": {
+        "id": "E06",
+        "name": "RNAD Gosport (Frater/Bedenham)",
+        "cat": "E",
+        "subcat": "Naval armament depot",
+        "tier": "T2",
+        "priority": 48,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Royal Naval Armament Depot. Surface fleet munitions storage. Groundburst to destroy ordnance.",
+        "notes": "",
+        "sources": "RN, DE&S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7642,
+          56.1181
+        ]
+      },
+      "properties": {
+        "id": "E07",
+        "name": "DM Glen Douglas",
+        "cat": "E",
+        "subcat": "NATO munitions depot",
+        "tier": "T2",
+        "priority": 49,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Defence Munitions Glen Douglas. Largest conventional munitions depot in Western Europe. NATO-tasked.",
+        "notes": "",
+        "sources": "DE&S"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4419,
+          56.0194
+        ]
+      },
+      "properties": {
+        "id": "E08",
+        "name": "Babcock Rosyth Dockyard",
+        "cat": "E",
+        "subcat": "Carrier refit + surface support",
+        "tier": "T2",
+        "priority": 50,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "QE-class carrier assembly site (complete ship assembly here). Ongoing RN surface vessel refit.",
+        "notes": "Also cat H (defence industry).",
+        "sources": "Babcock"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2097,
+          50.3828
+        ]
+      },
+      "properties": {
+        "id": "E05",
+        "name": "HMS Raleigh (Torpoint)",
+        "cat": "E",
+        "subcat": "RN initial training",
+        "tier": "T3",
+        "priority": 51,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Initial naval training for all ratings. Adjacent to Devonport — probably covered by that strike.",
+        "notes": "Likely covered by A05 Devonport strike.",
+        "sources": "RN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7139,
+          57.2778
+        ]
+      },
+      "properties": {
+        "id": "E09",
+        "name": "BUTEC Kyle of Lochalsh",
+        "cat": "E",
+        "subcat": "Underwater test range",
+        "tier": "T3",
+        "priority": 52,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "British Underwater Test and Evaluation Centre. Torpedo and sonar testing range in sea loch.",
+        "notes": "",
+        "sources": "QinetiQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0958,
+          51.6161
+        ]
+      },
+      "properties": {
+        "id": "D07",
+        "name": "RAF Benson",
+        "cat": "D",
+        "subcat": "Puma medium helicopter",
+        "tier": "T2",
+        "priority": 53,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Puma HC2 squadrons. Medium helicopter lift and JHC support.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4719,
+          52.6117
+        ]
+      },
+      "properties": {
+        "id": "D08",
+        "name": "RAF Wittering",
+        "cat": "D",
+        "subcat": "Logistics + engineering",
+        "tier": "T2",
+        "priority": 54,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "A4 Force HQ. RAF logistics, engineering and force development hub.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4183,
+          51.5531
+        ]
+      },
+      "properties": {
+        "id": "D09",
+        "name": "RAF Northolt",
+        "cat": "D",
+        "subcat": "London VIP + mil transport",
+        "tier": "T2",
+        "priority": 55,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "32 (The Royal) Sqn VIP transport. London CASEVAC. RAF presence in London outskirts.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5353,
+          54.2925
+        ]
+      },
+      "properties": {
+        "id": "D10",
+        "name": "RAF Leeming",
+        "cat": "D",
+        "subcat": "Training + support",
+        "tier": "T2",
+        "priority": 56,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "100 Sqn Hawk T1 aggressor/training. 2 MASU. Northern England RAF support hub.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5353,
+          53.2481
+        ]
+      },
+      "properties": {
+        "id": "D11",
+        "name": "RAF Valley",
+        "cat": "D",
+        "subcat": "Fast-jet pilot training",
+        "tier": "T2",
+        "priority": 57,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "4 FTS Hawk T2. All UK fast-jet pilots train here. Destruction ends pipeline of combat pilots.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4828,
+          53.0306
+        ]
+      },
+      "properties": {
+        "id": "D12",
+        "name": "RAF Cranwell",
+        "cat": "D",
+        "subcat": "Officer + flying training",
+        "tier": "T2",
+        "priority": 58,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "RAF College Cranwell. Basic flying training, officer cadet training. RAF's principal training establishment.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6681,
+          52.7983
+        ]
+      },
+      "properties": {
+        "id": "D13",
+        "name": "RAF Shawbury",
+        "cat": "D",
+        "subcat": "Rotary wing training",
+        "tier": "T2",
+        "priority": 59,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Defence Helicopter Flying School. All three services train rotary-wing pilots here.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5814,
+          55.4244
+        ]
+      },
+      "properties": {
+        "id": "D14",
+        "name": "RAF Boulmer",
+        "cat": "D",
+        "subcat": "Control and Reporting Centre",
+        "tier": "T2",
+        "priority": 60,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Air Surveillance and Control System CRC. Fuses UK radar picture for air defence.",
+        "notes": "Also cat G.",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7244,
+          54.3778
+        ]
+      },
+      "properties": {
+        "id": "F01",
+        "name": "Catterick Garrison",
+        "cat": "F",
+        "subcat": "Largest UK army garrison",
+        "tier": "T2",
+        "priority": 61,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Largest British Army garrison. Multiple brigades including 1st (UK) Armoured Infantry. Infantry Training Centre.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7583,
+          51.2528
+        ]
+      },
+      "properties": {
+        "id": "F02",
+        "name": "Aldershot Garrison",
+        "cat": "F",
+        "subcat": "Home of the British Army",
+        "tier": "T2",
+        "priority": 62,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Historic Home of the British Army. Garrison HQ, Army training facilities. Paras relocated to Colchester.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6633,
+          51.2319
+        ]
+      },
+      "properties": {
+        "id": "F03",
+        "name": "Tidworth Garrison",
+        "cat": "F",
+        "subcat": "3 (UK) Div armoured",
+        "tier": "T2",
+        "priority": 63,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Tidworth/Bulford/Larkhill complex. 3 (UK) Division armoured brigades. Salisbury Plain training area.",
+        "notes": "Tidworth, Bulford, Larkhill all in same strike area.",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9114,
+          51.8939
+        ]
+      },
+      "properties": {
+        "id": "F04",
+        "name": "Colchester Garrison (Merville Bks)",
+        "cat": "F",
+        "subcat": "16 Air Assault Bde",
+        "tier": "T2",
+        "priority": 64,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Home of 16 Air Assault Brigade — UK's high-readiness rapid reaction force (2 PARA, 3 PARA etc).",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2464,
+          55.9167
+        ]
+      },
+      "properties": {
+        "id": "F05",
+        "name": "Edinburgh Garrison (Redford/Dreghorn)",
+        "cat": "F",
+        "subcat": "Army barracks",
+        "tier": "T3",
+        "priority": 65,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Redford and Dreghorn barracks. Army presence in Edinburgh.",
+        "notes": "Covered by Edinburgh city strike (I12).",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7119,
+          51.3408
+        ]
+      },
+      "properties": {
+        "id": "F06",
+        "name": "RMA Sandhurst",
+        "cat": "F",
+        "subcat": "Officer training",
+        "tier": "T3",
+        "priority": 66,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Royal Military Academy Sandhurst. Training all British Army officers — destruction severs pipeline.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6317,
+          51.3172
+        ]
+      },
+      "properties": {
+        "id": "F07",
+        "name": "Infantry Training Centre Pirbright",
+        "cat": "F",
+        "subcat": "Phase 1 infantry training",
+        "tier": "T3",
+        "priority": 67,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Phase 1 infantry training. Principal basic training establishment for infantry soldiers.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0408,
+          54.5167
+        ]
+      },
+      "properties": {
+        "id": "F08",
+        "name": "Thiepval Bks, Lisburn (HQ 38 Bde)",
+        "cat": "F",
+        "subcat": "NI Army HQ",
+        "tier": "T3",
+        "priority": 68,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Thiepval Barracks, Lisburn. HQ 38 (Irish) Brigade. Army HQ for Northern Ireland.",
+        "notes": "",
+        "sources": "British Army"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8517,
+          60.825
+        ]
+      },
+      "properties": {
+        "id": "G01",
+        "name": "RRH Saxa Vord (Unst, Shetland)",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T2",
+        "priority": 69,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Northernmost UK radar. Air surveillance over Norwegian Sea and GIUK gap. Recently reactivated 2023.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3633,
+          57.48
+        ]
+      },
+      "properties": {
+        "id": "G02",
+        "name": "RRH Benbecula",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T2",
+        "priority": 70,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Remote Radar Head, Outer Hebrides. Western approaches air defence coverage.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8767,
+          57.4719
+        ]
+      },
+      "properties": {
+        "id": "G03",
+        "name": "RRH Buchan",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T2",
+        "priority": 71,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Remote Radar Head Buchan. Scottish east coast air surveillance. Former Master Diversion Airfield.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8183,
+          55.4183
+        ]
+      },
+      "properties": {
+        "id": "G04",
+        "name": "RRH Brizlee Wood",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T3",
+        "priority": 72,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Remote Radar Head. NE England coastal air surveillance.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4161,
+          54.1994
+        ]
+      },
+      "properties": {
+        "id": "G05",
+        "name": "RRH Staxton Wold",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T3",
+        "priority": 73,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Remote Radar Head, Yorkshire coast. Oldest continually operated radar site in UK.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3439,
+          50.8344
+        ]
+      },
+      "properties": {
+        "id": "L01",
+        "name": "Fawley Refinery",
+        "cat": "L",
+        "subcat": "Oil refinery",
+        "tier": "T2",
+        "priority": 74,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "ExxonMobil Fawley. Largest UK refinery, ~20% capacity. Feeds South England, Heathrow jet fuel. Adjacent Southampton.",
+        "notes": "",
+        "sources": "ExxonMobil"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8619,
+          53.2806
+        ]
+      },
+      "properties": {
+        "id": "L02",
+        "name": "Stanlow Refinery",
+        "cat": "L",
+        "subcat": "Oil refinery",
+        "tier": "T2",
+        "priority": 75,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "EET Fuels (ex-Essar) Stanlow, Cheshire. Second largest UK refinery. Feeds NW England.",
+        "notes": "",
+        "sources": "EET Fuels"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7094,
+          56.0075
+        ]
+      },
+      "properties": {
+        "id": "L03",
+        "name": "Grangemouth Refinery / Petrochemicals",
+        "cat": "L",
+        "subcat": "Oil refinery + petrochemicals",
+        "tier": "T2",
+        "priority": 76,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Petroineos Grangemouth. Scotland's only refinery (transitioning 2025+). Only ethylene cracker in Scotland.",
+        "notes": "Status in transition — may close as refinery.",
+        "sources": "Petroineos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.055,
+          51.705
+        ]
+      },
+      "properties": {
+        "id": "L09",
+        "name": "South Hook LNG (Milford Haven)",
+        "cat": "L",
+        "subcat": "LNG import terminal",
+        "tier": "T2",
+        "priority": 77,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "QatarEnergy/ExxonMobil. Largest UK LNG import terminal. Critical winter peak-shaving capacity.",
+        "notes": "Overlap J07.",
+        "sources": "South Hook LNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7164,
+          51.4472
+        ]
+      },
+      "properties": {
+        "id": "L10",
+        "name": "Isle of Grain LNG (Kent)",
+        "cat": "L",
+        "subcat": "LNG import terminal",
+        "tier": "T2",
+        "priority": 78,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "National Gas Grain LNG — largest UK LNG storage by volume. Thames Estuary. IFA interconnector nearby.",
+        "notes": "Overlap M04 Sellindge.",
+        "sources": "National Gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9986,
+          53.7358
+        ]
+      },
+      "properties": {
+        "id": "M01",
+        "name": "Drax Power Station (N Yorks)",
+        "cat": "M",
+        "subcat": "Biomass power",
+        "tier": "T2",
+        "priority": 79,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Drax — UK's largest power station by capacity (~3.9 GW). ~6% of UK electricity. Biomass + CCS.",
+        "notes": "",
+        "sources": "Drax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9444,
+          53.2617
+        ]
+      },
+      "properties": {
+        "id": "K02",
+        "name": "Capenhurst (Urenco UK)",
+        "cat": "K",
+        "subcat": "Uranium enrichment",
+        "tier": "T2",
+        "priority": 80,
+        "yield_kt": 475,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Urenco UK centrifuge enrichment plant. Sole UK uranium enrichment capability. Also stores depleted uranium.",
+        "notes": "",
+        "sources": "Urenco"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1328,
+          51.2081
+        ]
+      },
+      "properties": {
+        "id": "K03",
+        "name": "Hinkley Point C (Somerset)",
+        "cat": "K",
+        "subcat": "Nuclear power (new build)",
+        "tier": "T2",
+        "priority": 81,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "EDF Hinkley Point C EPR under construction (~7% future UK electricity). Groundburst to contaminate and prevent completion.",
+        "notes": "Hinkley Point B decommissioning adjacent.",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.62,
+          52.2142
+        ]
+      },
+      "properties": {
+        "id": "K04",
+        "name": "Sizewell B + C (Suffolk)",
+        "cat": "K",
+        "subcat": "Nuclear power",
+        "tier": "T2",
+        "priority": 82,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Sizewell B PWR (active) + Sizewell C planned. ~3% of current UK electricity.",
+        "notes": "",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9158,
+          54.0292
+        ]
+      },
+      "properties": {
+        "id": "K05",
+        "name": "Heysham 1 + 2 (Lancashire)",
+        "cat": "K",
+        "subcat": "Nuclear power",
+        "tier": "T2",
+        "priority": 83,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Two active AGR stations. UK's largest nuclear generating site. ~10% of national nuclear capacity.",
+        "notes": "",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1808,
+          54.635
+        ]
+      },
+      "properties": {
+        "id": "K06",
+        "name": "Hartlepool AGR",
+        "cat": "K",
+        "subcat": "Nuclear power",
+        "tier": "T2",
+        "priority": 84,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Active AGR station on Teesside. Contributing to grid.",
+        "notes": "",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4069,
+          55.9681
+        ]
+      },
+      "properties": {
+        "id": "K07",
+        "name": "Torness AGR (East Lothian)",
+        "cat": "K",
+        "subcat": "Nuclear power",
+        "tier": "T2",
+        "priority": 85,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Active AGR station south-east of Edinburgh. Scotland's only currently active nuclear power plant.",
+        "notes": "",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9833,
+          51.6833
+        ]
+      },
+      "properties": {
+        "id": "L04",
+        "name": "Pembroke Refinery (Valero)",
+        "cat": "L",
+        "subcat": "Oil refinery",
+        "tier": "T2",
+        "priority": 86,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Valero Pembroke, Wales. ~10 million tpa. One of largest European refineries.",
+        "notes": "",
+        "sources": "Valero"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2014,
+          53.64
+        ]
+      },
+      "properties": {
+        "id": "L05",
+        "name": "Lindsey Oil Refinery (Humber)",
+        "cat": "L",
+        "subcat": "Oil refinery",
+        "tier": "T2",
+        "priority": 87,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Prax Group, North Lincolnshire. Humber refinery complex.",
+        "notes": "Adjacent to L06.",
+        "sources": "Prax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4494,
+          52.8519
+        ]
+      },
+      "properties": {
+        "id": "L07",
+        "name": "Bacton Gas Terminal (Norfolk)",
+        "cat": "L",
+        "subcat": "Gas import terminal",
+        "tier": "T2",
+        "priority": 88,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "North Sea gas plus BBL (NL) and IUK (BE) interconnectors. Second key gas entry point for UK.",
+        "notes": "",
+        "sources": "National Gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.14,
+          53.65
+        ]
+      },
+      "properties": {
+        "id": "L08",
+        "name": "Easington Gas Terminal (E Yorks)",
+        "cat": "L",
+        "subcat": "Gas import terminal",
+        "tier": "T2",
+        "priority": 89,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Langeled pipeline from Norway terminates here (~20% of UK gas). East Yorkshire coast.",
+        "notes": "",
+        "sources": "Equinor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0222,
+          51.1025
+        ]
+      },
+      "properties": {
+        "id": "M04",
+        "name": "Sellindge / Folkestone (IFA HVDC)",
+        "cat": "M",
+        "subcat": "UK-France interconnector",
+        "tier": "T2",
+        "priority": 90,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "IFA and IFA2 UK converter stations. 2 GW to France. Destroying severs major import/export link.",
+        "notes": "",
+        "sources": "National Grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7953,
+          51.4011
+        ]
+      },
+      "properties": {
+        "id": "M07",
+        "name": "National Grid ESO Control Centre (Wokingham)",
+        "cat": "M",
+        "subcat": "Grid control",
+        "tier": "T2",
+        "priority": 91,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "National Grid Electricity System Operator main control centre. UK transmission system operation.",
+        "notes": "",
+        "sources": "NESO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3511,
+          51.9539
+        ]
+      },
+      "properties": {
+        "id": "J01",
+        "name": "Port of Felixstowe",
+        "cat": "J",
+        "subcat": "Container port",
+        "tier": "T2",
+        "priority": 92,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Britain's busiest container port. ~40% of UK container trade. Hutchison Ports.",
+        "notes": "",
+        "sources": "Felixstowe"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5,
+          51.5158
+        ]
+      },
+      "properties": {
+        "id": "J02",
+        "name": "London Gateway",
+        "cat": "J",
+        "subcat": "Deep-water container port",
+        "tier": "T2",
+        "priority": 93,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "DP World London Gateway. Deep-water container port on Thames. Adjacent data centre park.",
+        "notes": "",
+        "sources": "DP World"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0069,
+          53.4419
+        ]
+      },
+      "properties": {
+        "id": "J04",
+        "name": "Liverpool / Birkenhead (Mersey Docks)",
+        "cat": "J",
+        "subcat": "Atlantic container port",
+        "tier": "T2",
+        "priority": 94,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Mersey Docks container terminal at Seaforth. Main Atlantic container port for NW England.",
+        "notes": "Covered partly by Liverpool city strike (I07).",
+        "sources": "Peel Ports"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1814,
+          53.6306
+        ]
+      },
+      "properties": {
+        "id": "J05",
+        "name": "Port of Immingham",
+        "cat": "J",
+        "subcat": "Largest UK port by tonnage",
+        "tier": "T2",
+        "priority": 95,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Largest UK port by tonnage. Oil, coal, bulk cargo. Drax biomass imports.",
+        "notes": "",
+        "sources": "ABP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.595,
+          51.5112
+        ]
+      },
+      "properties": {
+        "id": "O01",
+        "name": "Slough data centre cluster",
+        "cat": "O",
+        "subcat": "Hyperscale DC cluster",
+        "tier": "T2",
+        "priority": 96,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Slough Trading Estate: Equinix LD4/LD5/LD6/LD8, Virtus, Digital Realty, Ark. Densest data centre cluster in Europe. AWS, Azure, Google, Oracle European points of presence.",
+        "notes": "Partly covered by London GZ 3 (I03).",
+        "sources": "Uptime Institute, DCD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.02,
+          51.5083
+        ]
+      },
+      "properties": {
+        "id": "O02",
+        "name": "Docklands DC cluster (London)",
+        "cat": "O",
+        "subcat": "Internet exchange + hyperscale",
+        "tier": "T2",
+        "priority": 97,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Telehouse North/East/West, Equinix LD1-3. LINX core. London main internet interconnect.",
+        "notes": "Covered by London GZ 1 (I01).",
+        "sources": "Uptime Institute"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.008,
+          51.5081
+        ]
+      },
+      "properties": {
+        "id": "N09",
+        "name": "Telehouse / LINX Docklands",
+        "cat": "N",
+        "subcat": "UK internet exchange",
+        "tier": "T2",
+        "priority": 98,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "LINX (London Internet Exchange) primary site at Telehouse North. UK internet traffic interchange. Covered by London GZ 1.",
+        "notes": "Overlap I01/O02.",
+        "sources": "LINX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.16,
+          51.5519
+        ]
+      },
+      "properties": {
+        "id": "N02",
+        "name": "Oxwich Bay cable landing (S Wales)",
+        "cat": "N",
+        "subcat": "Transatlantic cable",
+        "tier": "T2",
+        "priority": 99,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Amitie, 2Africa and other major cables landing S Wales coast. Growing strategic importance.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1825,
+          50.0472
+        ]
+      },
+      "properties": {
+        "id": "N03",
+        "name": "Goonhilly Earth Station (Cornwall)",
+        "cat": "N",
+        "subcat": "Satellite + cable",
+        "tier": "T2",
+        "priority": 100,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Major satellite uplink facility (GEO, MEO, deep space). Adjacent undersea cable landings at Porthcurno.",
+        "notes": "Also covers nearby Porthcurno.",
+        "sources": "Goonhilly Earth Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7472,
+          51.1519
+        ]
+      },
+      "properties": {
+        "id": "H10",
+        "name": "QinetiQ Boscombe Down",
+        "cat": "H",
+        "subcat": "Military flight test",
+        "tier": "T2",
+        "priority": 101,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK Military Flying Test and Evaluation centre. Empire Test Pilots School. All UK military aircraft cleared here.",
+        "notes": "",
+        "sources": "QinetiQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7014,
+          51.1233
+        ]
+      },
+      "properties": {
+        "id": "H11",
+        "name": "DSTL Porton Down",
+        "cat": "H",
+        "subcat": "CBRN defence research",
+        "tier": "T2",
+        "priority": 102,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Defence Science and Technology Laboratory. Chemical and biological defence research. Historic significance.",
+        "notes": "",
+        "sources": "DSTL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2361,
+          55.8778
+        ]
+      },
+      "properties": {
+        "id": "H05",
+        "name": "Thales UK Glasgow (Linthouse)",
+        "cat": "H",
+        "subcat": "Sonar + optronics",
+        "tier": "T3",
+        "priority": 103,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Thales UK. Sonar suites for RN submarines, optronic mast systems, ship radar.",
+        "notes": "",
+        "sources": "Thales UK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4617,
+          53.5869
+        ]
+      },
+      "properties": {
+        "id": "H07",
+        "name": "MBDA Lostock (Bolton)",
+        "cat": "H",
+        "subcat": "Missile production",
+        "tier": "T3",
+        "priority": 104,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "MBDA production facility. CAMM/Sea Ceptor manufacture.",
+        "notes": "",
+        "sources": "MBDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2692,
+          55.9344
+        ]
+      },
+      "properties": {
+        "id": "H08",
+        "name": "Leonardo UK Edinburgh (Crewe Toll)",
+        "cat": "H",
+        "subcat": "Airborne radars + EW",
+        "tier": "T3",
+        "priority": 105,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Captor-E/M radar (Typhoon/F-35), Osprey AESA, DAS systems. Sole UK airborne radar OEM.",
+        "notes": "Covered by Edinburgh city strike (I12).",
+        "sources": "Leonardo UK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4047,
+          51.8797
+        ]
+      },
+      "properties": {
+        "id": "H09",
+        "name": "Leonardo UK Luton",
+        "cat": "H",
+        "subcat": "Defensive aids + EW",
+        "tier": "T3",
+        "priority": 106,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Defensive Aids Sub-System, laser warning, EW systems for UK combat aircraft.",
+        "notes": "",
+        "sources": "Leonardo UK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          51.2833
+        ]
+      },
+      "properties": {
+        "id": "H12",
+        "name": "QinetiQ Farnborough",
+        "cat": "H",
+        "subcat": "Defence research HQ",
+        "tier": "T3",
+        "priority": 107,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "QinetiQ HQ. Historic RAE site. Wide-spectrum defence R&D.",
+        "notes": "",
+        "sources": "QinetiQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1086,
+          50.8533
+        ]
+      },
+      "properties": {
+        "id": "H13",
+        "name": "QinetiQ Portsdown Technology Park",
+        "cat": "H",
+        "subcat": "Maritime sensors + underwater R&D",
+        "tier": "T3",
+        "priority": 108,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Maritime sensor systems, underwater weapons research. Portsdown West site.",
+        "notes": "Portsmouth area — overlap with HMNB strike.",
+        "sources": "QinetiQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5683,
+          52.1389
+        ]
+      },
+      "properties": {
+        "id": "H14",
+        "name": "QinetiQ Aberporth",
+        "cat": "H",
+        "subcat": "Weapons test range",
+        "tier": "T3",
+        "priority": 109,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "West Wales test range. Air-to-surface and air-to-ground weapons qualification, UAV trials.",
+        "notes": "",
+        "sources": "QinetiQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4839,
+          52.8953
+        ]
+      },
+      "properties": {
+        "id": "H15",
+        "name": "Rolls-Royce Sinfin, Derby",
+        "cat": "H",
+        "subcat": "Aero engine manufacturing",
+        "tier": "T3",
+        "priority": 110,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Rolls-Royce aero engine manufacture (EJ200 for Typhoon). Derby — overlap with Raynesway (A07) and Derby city (I20).",
+        "notes": "Covered partly by Derby/A07 strikes.",
+        "sources": "Rolls-Royce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2878,
+          50.2508
+        ]
+      },
+      "properties": {
+        "id": "G06",
+        "name": "RRH Portreath",
+        "cat": "G",
+        "subcat": "Air defence radar",
+        "tier": "T3",
+        "priority": 111,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Remote Radar Head. South-west approaches air coverage.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3814,
+          52.0258
+        ]
+      },
+      "properties": {
+        "id": "G09",
+        "name": "DIS Chicksands",
+        "cat": "G",
+        "subcat": "Defence Intelligence",
+        "tier": "T3",
+        "priority": 112,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Defence Intelligence Security Centre / DISC. Former NSA/GCHQ Chicksands site. Military intelligence training.",
+        "notes": "",
+        "sources": "MoD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.55,
+          55.0306
+        ]
+      },
+      "properties": {
+        "id": "D15",
+        "name": "RAF Spadeadam",
+        "cat": "D",
+        "subcat": "Electronic warfare range",
+        "tier": "T3",
+        "priority": 113,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Largest electronic warfare tactics range in Europe. EW training for NATO fast jets.",
+        "notes": "",
+        "sources": "RAF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3139,
+          51.1261
+        ]
+      },
+      "properties": {
+        "id": "J06",
+        "name": "Port of Dover",
+        "cat": "J",
+        "subcat": "Cross-Channel ferry",
+        "tier": "T2",
+        "priority": 114,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "~40% of UK ro-ro freight with the continent. Cross-Channel chokepoint.",
+        "notes": "",
+        "sources": "Port of Dover"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0461,
+          51.7097
+        ]
+      },
+      "properties": {
+        "id": "J07",
+        "name": "Milford Haven",
+        "cat": "J",
+        "subcat": "LNG + oil port",
+        "tier": "T2",
+        "priority": 115,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK's 2nd largest port by tonnage. South Hook and Dragon LNG terminals. Valero refinery.",
+        "notes": "Overlap L10, L11, L04.",
+        "sources": "Milford Haven Port Authority"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.35,
+          51.4667
+        ]
+      },
+      "properties": {
+        "id": "J03",
+        "name": "Port of Tilbury",
+        "cat": "J",
+        "subcat": "General cargo + container",
+        "tier": "T3",
+        "priority": 116,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Port of Tilbury. London's primary grain and bulk port. ro-ro and container.",
+        "notes": "",
+        "sources": "Forth Ports"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0714,
+          53.5742
+        ]
+      },
+      "properties": {
+        "id": "J08",
+        "name": "Port of Grimsby",
+        "cat": "J",
+        "subcat": "Humber port",
+        "tier": "T3",
+        "priority": 117,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Humber estuary. Adjacent to Immingham. Ro-ro and bulk.",
+        "notes": "",
+        "sources": "ABP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9,
+          54.6167
+        ]
+      },
+      "properties": {
+        "id": "J09",
+        "name": "Belfast Harbour",
+        "cat": "J",
+        "subcat": "NI main port",
+        "tier": "T3",
+        "priority": 118,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Main Northern Ireland port. Harland and Wolff adjacent (Spirit Aero/H&W repair).",
+        "notes": "Covered by Belfast city strike (I14).",
+        "sources": "Belfast Harbour Commissioners"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1133,
+          53.1194
+        ]
+      },
+      "properties": {
+        "id": "M02",
+        "name": "Dinorwig (Llanberis, N Wales)",
+        "cat": "M",
+        "subcat": "Pumped storage",
+        "tier": "T3",
+        "priority": 119,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Electric Mountain pumped storage, 1.7 GW. Critical for grid frequency stability during peak demand.",
+        "notes": "",
+        "sources": "Engie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.115,
+          56.3942
+        ]
+      },
+      "properties": {
+        "id": "M03",
+        "name": "Cruachan (Argyll)",
+        "cat": "M",
+        "subcat": "Pumped storage",
+        "tier": "T3",
+        "priority": 120,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Hollow Mountain pumped storage, 440 MW. Scottish grid stability.",
+        "notes": "",
+        "sources": "Drax"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3261,
+          51.2883
+        ]
+      },
+      "properties": {
+        "id": "M05",
+        "name": "Richborough (Nemo Link)",
+        "cat": "M",
+        "subcat": "UK-Belgium interconnector",
+        "tier": "T3",
+        "priority": 121,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Nemo Link 1 GW HVDC converter station at Richborough, Kent. UK-Belgium.",
+        "notes": "",
+        "sources": "National Grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1022,
+          52.9275
+        ]
+      },
+      "properties": {
+        "id": "M06",
+        "name": "Bicker Fen (Viking Link)",
+        "cat": "M",
+        "subcat": "UK-Denmark interconnector",
+        "tier": "T3",
+        "priority": 122,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Viking Link 1.4 GW HVDC converter station near Boston, Lincs. UK-Denmark.",
+        "notes": "",
+        "sources": "National Grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.475,
+          51.55
+        ]
+      },
+      "properties": {
+        "id": "M08",
+        "name": "Iron Acton 400kV Substation",
+        "cat": "M",
+        "subcat": "400 kV super-grid node",
+        "tier": "T3",
+        "priority": 123,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Major 400 kV super-grid node, South Gloucestershire. SW England grid hub.",
+        "notes": "",
+        "sources": "National Grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7681,
+          51.2839
+        ]
+      },
+      "properties": {
+        "id": "O03",
+        "name": "Farnborough / Fleet DC cluster (Ark Zeta)",
+        "cat": "O",
+        "subcat": "Secure/gov DC",
+        "tier": "T2",
+        "priority": 124,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Ark Data Centres Farnborough Zeta / Leap DC. Major public-sector and defence-adjacent cloud hosting.",
+        "notes": "Overlap H12 QinetiQ Farnborough.",
+        "sources": "Ark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0208,
+          51.2972
+        ]
+      },
+      "properties": {
+        "id": "N04",
+        "name": "Highbridge / Brean (Somerset)",
+        "cat": "N",
+        "subcat": "Cable landing",
+        "tier": "T3",
+        "priority": 125,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "TAT-14 Bristol Channel landing point at Brean. Secondary transatlantic route.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.75,
+          52.475
+        ]
+      },
+      "properties": {
+        "id": "N05",
+        "name": "Lowestoft cable landing (Suffolk)",
+        "cat": "N",
+        "subcat": "N Sea + Scandinavian cables",
+        "tier": "T3",
+        "priority": 126,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Scandinavian and North Sea cable landings. East Anglia coast.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6972,
+          52.7139
+        ]
+      },
+      "properties": {
+        "id": "N06",
+        "name": "Winterton-on-Sea cable landing (Norfolk)",
+        "cat": "N",
+        "subcat": "N Sea cables",
+        "tier": "T3",
+        "priority": 127,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Pan-European and North Sea cable landings, Norfolk coast.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6333,
+          53.3089
+        ]
+      },
+      "properties": {
+        "id": "N07",
+        "name": "Holyhead cable landing (Anglesey)",
+        "cat": "N",
+        "subcat": "Ireland cables",
+        "tier": "T3",
+        "priority": 128,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Cable landing connecting UK-Ireland. Severs critical cross-Irish Sea links.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5444,
+          58.6128
+        ]
+      },
+      "properties": {
+        "id": "N08",
+        "name": "Scrabster / Thurso cable landing (Caithness)",
+        "cat": "N",
+        "subcat": "Nordic cables",
+        "tier": "T3",
+        "priority": 129,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Far-north cable landings connecting UK-Iceland-Faroes-Scandinavia.",
+        "notes": "",
+        "sources": "TeleGeography"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2836,
+          51.5269
+        ]
+      },
+      "properties": {
+        "id": "O04",
+        "name": "Park Royal DC cluster (West London)",
+        "cat": "O",
+        "subcat": "Colocation",
+        "tier": "T3",
+        "priority": 130,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "West London DC cluster: Global Switch Park Royal, Pulsant. London overspill capacity.",
+        "notes": "Partly covered by London GZ 3 (I03).",
+        "sources": "DCD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2944,
+          53.4856
+        ]
+      },
+      "properties": {
+        "id": "O05",
+        "name": "Equinix Manchester MA1+",
+        "cat": "O",
+        "subcat": "N England DC",
+        "tier": "T3",
+        "priority": 131,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Equinix Manchester data centre cluster. Primary cloud on-ramp for NW England.",
+        "notes": "Covered by Manchester city strike (I05).",
+        "sources": "Equinix"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0081,
+          51.5814
+        ]
+      },
+      "properties": {
+        "id": "O06",
+        "name": "NGD Newport / Vantage (S Wales)",
+        "cat": "O",
+        "subcat": "Large DC",
+        "tier": "T3",
+        "priority": 132,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Next Generation Data / Vantage Newport. One of Europe's largest single-site data centres. AWS, UK Gov data.",
+        "notes": "",
+        "sources": "Vantage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.48,
+          51.51
+        ]
+      },
+      "properties": {
+        "id": "O07",
+        "name": "STACK Infrastructure (West Drayton / Hayes)",
+        "cat": "O",
+        "subcat": "Hyperscale DC",
+        "tier": "T3",
+        "priority": 133,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Large west London hyperscale campus. Near Heathrow. Major cloud anchor.",
+        "notes": "Partly covered by London GZ 3.",
+        "sources": "STACK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0358,
+          51.6956
+        ]
+      },
+      "properties": {
+        "id": "L11",
+        "name": "Dragon LNG (Milford Haven)",
+        "cat": "L",
+        "subcat": "LNG import terminal",
+        "tier": "T3",
+        "priority": 134,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Second Milford Haven LNG terminal. Shell/Ancala. Adjacent to South Hook.",
+        "notes": "",
+        "sources": "Dragon LNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3239,
+          60.4558
+        ]
+      },
+      "properties": {
+        "id": "L12",
+        "name": "Sullom Voe Oil Terminal (Shetland)",
+        "cat": "L",
+        "subcat": "Oil terminal",
+        "tier": "T3",
+        "priority": 135,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "North Sea and West of Shetland oil terminal. BP-operated. Critical to N Sea production.",
+        "notes": "",
+        "sources": "BP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1333,
+          58.8333
+        ]
+      },
+      "properties": {
+        "id": "L13",
+        "name": "Flotta Oil Terminal (Orkney)",
+        "cat": "L",
+        "subcat": "Oil terminal",
+        "tier": "T3",
+        "priority": 136,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Repsol/Repsol Sinopec oil terminal, Orkney. Piper/Claymore/Flotta field output.",
+        "notes": "",
+        "sources": "Repsol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9614,
+          50.9136
+        ]
+      },
+      "properties": {
+        "id": "K08",
+        "name": "Dungeness B (Kent)",
+        "cat": "K",
+        "subcat": "Nuclear power (defuelling)",
+        "tier": "T3",
+        "priority": 137,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "AGR in defuelling phase. Spent fuel on site — contamination risk.",
+        "notes": "",
+        "sources": "EDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8958,
+          51.7431
+        ]
+      },
+      "properties": {
+        "id": "K09",
+        "name": "Bradwell (Essex)",
+        "cat": "K",
+        "subcat": "Nuclear decommissioning",
+        "tier": "T3",
+        "priority": 138,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Magnox decommissioning, Essex coast. Spent fuel in interim storage.",
+        "notes": "",
+        "sources": "NDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9467,
+          52.9236
+        ]
+      },
+      "properties": {
+        "id": "K10",
+        "name": "Trawsfynydd (N Wales)",
+        "cat": "K",
+        "subcat": "Nuclear decommissioning",
+        "tier": "T3",
+        "priority": 139,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Magnox decommissioning. Proposed SMR candidate site. Radioactive inventory on site.",
+        "notes": "",
+        "sources": "NDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2361,
+          55.0167
+        ]
+      },
+      "properties": {
+        "id": "K11",
+        "name": "Chapelcross (Dumfriesshire)",
+        "cat": "K",
+        "subcat": "Nuclear decommissioning",
+        "tier": "T3",
+        "priority": 140,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Former Magnox. Historically produced tritium for nuclear weapons. Decommissioning.",
+        "notes": "",
+        "sources": "NDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7519,
+          58.5789
+        ]
+      },
+      "properties": {
+        "id": "K12",
+        "name": "Dounreay (Caithness)",
+        "cat": "K",
+        "subcat": "Nuclear decommissioning",
+        "tier": "T3",
+        "priority": 141,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Historic fast-reactor site. Significant radioactive inventory in decommissioning. Remote but significant.",
+        "notes": "",
+        "sources": "NDA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4833,
+          53.4167
+        ]
+      },
+      "properties": {
+        "id": "M09",
+        "name": "Wylfa (Anglesey)",
+        "cat": "M",
+        "subcat": "Nuclear decom + major grid node",
+        "tier": "T3",
+        "priority": 142,
+        "yield_kt": 100,
+        "burst": "ground",
+        "height_m": 0,
+        "rationale": "Wylfa Magnox decommissioning and 400 kV super-grid substation. Future large-scale nuclear candidate site.",
+        "notes": "",
+        "sources": "NDA, National Grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7667,
+          55.9533
+        ]
+      },
+      "properties": {
+        "id": "J10",
+        "name": "Greenock / Clydeport",
+        "cat": "J",
+        "subcat": "Clyde container port",
+        "tier": "T3",
+        "priority": 143,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Clydeport Greenock Ocean Terminal. Container and cruise. Clyde approaches.",
+        "notes": "",
+        "sources": "Peel Ports"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1758,
+          55.9522
+        ]
+      },
+      "properties": {
+        "id": "C11",
+        "name": "Scottish Parliament, Holyrood",
+        "cat": "C",
+        "subcat": "Devolved administration",
+        "tier": "T2",
+        "priority": 144,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Scottish Parliament and government. Political decapitation of Scotland.",
+        "notes": "Covered by Edinburgh city strike (I12).",
+        "sources": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1628,
+          51.4642
+        ]
+      },
+      "properties": {
+        "id": "C12",
+        "name": "Senedd / Senedd Cymru, Cardiff",
+        "cat": "C",
+        "subcat": "Devolved administration",
+        "tier": "T2",
+        "priority": 145,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Welsh Parliament and government. Political decapitation of Wales.",
+        "notes": "Covered by Cardiff city strike (I13).",
+        "sources": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8344,
+          54.6042
+        ]
+      },
+      "properties": {
+        "id": "C13",
+        "name": "Stormont, Belfast",
+        "cat": "C",
+        "subcat": "Devolved administration",
+        "tier": "T2",
+        "priority": 146,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Northern Ireland Assembly and Executive. Political decapitation of Northern Ireland.",
+        "notes": "Covered by Belfast city strike (I14).",
+        "sources": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0919,
+          51.5144
+        ]
+      },
+      "properties": {
+        "id": "I01",
+        "name": "London — City / East",
+        "cat": "I",
+        "subcat": "Financial + Docklands",
+        "tier": "T3",
+        "priority": 147,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "City of London financial district, Bank of England, Docklands data centres. GZ 1 of 3 for London.",
+        "notes": "Multi-GZ pattern with I02 and I03.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1246,
+          51.5007
+        ]
+      },
+      "properties": {
+        "id": "I02",
+        "name": "London — Westminster / Whitehall",
+        "cat": "I",
+        "subcat": "Government centre",
+        "tier": "T3",
+        "priority": 148,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Parliament, Whitehall, Downing St, MoD, PINDAR, MI5, MI6. GZ 2 of 3 for London. Decapitates UK government.",
+        "notes": "Covers C01, C08, C09.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.38,
+          51.47
+        ]
+      },
+      "properties": {
+        "id": "I03",
+        "name": "London — West / Slough corridor",
+        "cat": "I",
+        "subcat": "Industry + data centre cluster",
+        "tier": "T3",
+        "priority": 149,
+        "yield_kt": 800,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "West London industrial + transport + Slough data centre cluster. GZ 3 of 3 for London.",
+        "notes": "Covers O01 (Slough DCs) and Heathrow (P01) on periphery.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8904,
+          52.4862
+        ]
+      },
+      "properties": {
+        "id": "I04",
+        "name": "Birmingham",
+        "cat": "I",
+        "subcat": "2nd largest city",
+        "tier": "T3",
+        "priority": 150,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "2nd largest UK city (~1.15M). Midlands industrial and commercial heartland.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2426,
+          53.4808
+        ]
+      },
+      "properties": {
+        "id": "I05",
+        "name": "Manchester",
+        "cat": "I",
+        "subcat": "NW England regional capital",
+        "tier": "T3",
+        "priority": 151,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Greater Manchester ~2.9M. NW England economic hub. Major logistics, tech and media centre.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2518,
+          55.8642
+        ]
+      },
+      "properties": {
+        "id": "I06",
+        "name": "Glasgow",
+        "cat": "I",
+        "subcat": "Scotland's largest city",
+        "tier": "T3",
+        "priority": 152,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Greater Glasgow ~1.85M. Scotland's largest urban area. Naval shipbuilding on the Clyde.",
+        "notes": "Covers H03/H04 Govan/Scotstoun shipyards.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9916,
+          53.4084
+        ]
+      },
+      "properties": {
+        "id": "I07",
+        "name": "Liverpool",
+        "cat": "I",
+        "subcat": "NW England port city",
+        "tier": "T3",
+        "priority": 153,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Merseyside ~1.4M. Major Atlantic port and container terminal. Regional industrial hub.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5491,
+          53.8008
+        ]
+      },
+      "properties": {
+        "id": "I08",
+        "name": "Leeds",
+        "cat": "I",
+        "subcat": "Yorkshire financial centre",
+        "tier": "T3",
+        "priority": 154,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "West Yorkshire financial and commercial centre. ~800k city, ~1.8M metro.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4701,
+          53.3811
+        ]
+      },
+      "properties": {
+        "id": "I09",
+        "name": "Sheffield",
+        "cat": "I",
+        "subcat": "Steel and engineering",
+        "tier": "T3",
+        "priority": 155,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Historic steel and engineering city. Advanced manufacturing cluster. Pop ~580k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5879,
+          51.4545
+        ]
+      },
+      "properties": {
+        "id": "I10",
+        "name": "Bristol",
+        "cat": "I",
+        "subcat": "SW England aerospace",
+        "tier": "T3",
+        "priority": 156,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Aerospace industry (Airbus Filton, GKN). Port of Bristol. Pop ~470k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6178,
+          54.9783
+        ]
+      },
+      "properties": {
+        "id": "I11",
+        "name": "Newcastle upon Tyne",
+        "cat": "I",
+        "subcat": "NE England regional capital",
+        "tier": "T3",
+        "priority": 157,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Tyneside conurbation ~780k. NE regional capital.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1883,
+          55.9533
+        ]
+      },
+      "properties": {
+        "id": "I12",
+        "name": "Edinburgh",
+        "cat": "I",
+        "subcat": "Scottish capital",
+        "tier": "T3",
+        "priority": 158,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Scotland's capital. Financial services hub. ~510k city. Scottish Parliament (C12) nearby.",
+        "notes": "Covers C12 Holyrood and H08 Leonardo.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1791,
+          51.4816
+        ]
+      },
+      "properties": {
+        "id": "I13",
+        "name": "Cardiff",
+        "cat": "I",
+        "subcat": "Welsh capital",
+        "tier": "T3",
+        "priority": 159,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Capital of Wales. Administrative and commercial centre. ~365k city.",
+        "notes": "Covers C13 Senedd.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9301,
+          54.5973
+        ]
+      },
+      "properties": {
+        "id": "I14",
+        "name": "Belfast",
+        "cat": "I",
+        "subcat": "NI capital",
+        "tier": "T3",
+        "priority": 160,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Capital of Northern Ireland. Aerospace industry (Spirit Aero, former Short Brothers). ~345k.",
+        "notes": "Covers C14 Stormont.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1581,
+          52.9548
+        ]
+      },
+      "properties": {
+        "id": "I15",
+        "name": "Nottingham",
+        "cat": "I",
+        "subcat": "East Midlands",
+        "tier": "T3",
+        "priority": 161,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "East Midlands regional centre. ~330k city. Pharmaceutical manufacturing.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4044,
+          50.9097
+        ]
+      },
+      "properties": {
+        "id": "I16",
+        "name": "Southampton",
+        "cat": "I",
+        "subcat": "S coast port city",
+        "tier": "T3",
+        "priority": 162,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "South coast port — container, cruise and ro-ro. Pop ~270k. Adjacent Fawley refinery.",
+        "notes": "Overlap with J01/L01.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.088,
+          50.8198
+        ]
+      },
+      "properties": {
+        "id": "I17",
+        "name": "Portsmouth",
+        "cat": "I",
+        "subcat": "RN city",
+        "tier": "T3",
+        "priority": 163,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Royal Navy HQ city. Pop ~215k. Probably covered by HMNB Portsmouth strike.",
+        "notes": "Overlap E01/C05.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1427,
+          50.3755
+        ]
+      },
+      "properties": {
+        "id": "I18",
+        "name": "Plymouth",
+        "cat": "I",
+        "subcat": "SW naval city",
+        "tier": "T3",
+        "priority": 164,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "UK's largest naval city. Pop ~264k. Largely covered by HMNB Devonport strike.",
+        "notes": "Overlap A05.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1398,
+          52.6369
+        ]
+      },
+      "properties": {
+        "id": "I19",
+        "name": "Leicester",
+        "cat": "I",
+        "subcat": "East Midlands",
+        "tier": "T3",
+        "priority": 165,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "East Midlands manufacturing and commercial city. Pop ~370k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5197,
+          52.4068
+        ]
+      },
+      "properties": {
+        "id": "I20",
+        "name": "Coventry",
+        "cat": "I",
+        "subcat": "Midlands engineering",
+        "tier": "T3",
+        "priority": 166,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "West Midlands automotive and engineering. Pop ~345k. Rebuilt after WWII blitz.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1794,
+          53.0027
+        ]
+      },
+      "properties": {
+        "id": "I21",
+        "name": "Stoke-on-Trent",
+        "cat": "I",
+        "subcat": "Midlands industrial",
+        "tier": "T3",
+        "priority": 167,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Midlands industrial city. Pop ~260k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1282,
+          52.5862
+        ]
+      },
+      "properties": {
+        "id": "I22",
+        "name": "Wolverhampton",
+        "cat": "I",
+        "subcat": "West Midlands",
+        "tier": "T3",
+        "priority": 168,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "West Midlands industrial city. Pop ~260k. Engineering and manufacturing.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4746,
+          52.9225
+        ]
+      },
+      "properties": {
+        "id": "I23",
+        "name": "Derby",
+        "cat": "I",
+        "subcat": "Aerospace + rail engineering",
+        "tier": "T3",
+        "priority": 169,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Rolls-Royce HQ, Toyota, Bombardier trains. Pop ~260k. Overlap with A07 Raynesway.",
+        "notes": "Overlap A07, H15.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9781,
+          51.4543
+        ]
+      },
+      "properties": {
+        "id": "I24",
+        "name": "Reading",
+        "cat": "I",
+        "subcat": "Thames Valley tech hub",
+        "tier": "T3",
+        "priority": 170,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Thames Valley tech corridor HQ cluster. Pop ~320k. 10 miles from AWE Aldermaston.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7594,
+          52.0406
+        ]
+      },
+      "properties": {
+        "id": "I25",
+        "name": "Milton Keynes",
+        "cat": "I",
+        "subcat": "New city",
+        "tier": "T3",
+        "priority": 171,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "New city, logistics hub. Pop ~290k. Strategic road junction (M1/A5).",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1218,
+          52.2053
+        ]
+      },
+      "properties": {
+        "id": "I26",
+        "name": "Cambridge",
+        "cat": "I",
+        "subcat": "Science and tech cluster",
+        "tier": "T3",
+        "priority": 172,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Cambridge science and biotech cluster. ARM Holdings, AstraZeneca, Mott MacDonald. Pop ~145k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2577,
+          51.752
+        ]
+      },
+      "properties": {
+        "id": "I27",
+        "name": "Oxford",
+        "cat": "I",
+        "subcat": "Academic and tech",
+        "tier": "T3",
+        "priority": 173,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "University and tech cluster. BMW MINI plant. Pop ~160k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9436,
+          51.6214
+        ]
+      },
+      "properties": {
+        "id": "I28",
+        "name": "Swansea",
+        "cat": "I",
+        "subcat": "South Wales",
+        "tier": "T3",
+        "priority": 174,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "South Wales industrial and port city. Pop ~240k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0943,
+          57.1497
+        ]
+      },
+      "properties": {
+        "id": "I29",
+        "name": "Aberdeen",
+        "cat": "I",
+        "subcat": "North Sea oil capital",
+        "tier": "T3",
+        "priority": 175,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "North Sea oil and gas industry hub. Port and logistics. Pop ~200k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9707,
+          56.462
+        ]
+      },
+      "properties": {
+        "id": "I30",
+        "name": "Dundee",
+        "cat": "I",
+        "subcat": "East Scotland",
+        "tier": "T3",
+        "priority": 176,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Scottish east coast city. Tech sector (video games — Rockstar/DC Thompson), biomedical. Pop ~150k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3367,
+          53.7456
+        ]
+      },
+      "properties": {
+        "id": "I31",
+        "name": "Kingston upon Hull",
+        "cat": "I",
+        "subcat": "E Yorkshire port",
+        "tier": "T3",
+        "priority": 177,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Humber estuary port city. Siemens wind turbine manufacture. Pop ~260k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2349,
+          54.5742
+        ]
+      },
+      "properties": {
+        "id": "I32",
+        "name": "Middlesbrough / Teesside",
+        "cat": "I",
+        "subcat": "Industrial NE",
+        "tier": "T3",
+        "priority": 178,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Teesside industrial conurbation. Steel, chemicals, Wilton industrial complex. ~300k area.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3833,
+          54.9069
+        ]
+      },
+      "properties": {
+        "id": "I33",
+        "name": "Sunderland",
+        "cat": "I",
+        "subcat": "NE England",
+        "tier": "T3",
+        "priority": 179,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "NE port city. Nissan UK car plant — largest single car factory in UK. Pop ~275k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7031,
+          53.7632
+        ]
+      },
+      "properties": {
+        "id": "I34",
+        "name": "Preston",
+        "cat": "I",
+        "subcat": "Lancashire",
+        "tier": "T3",
+        "priority": 180,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Lancashire city. Near BAE Warton (H01) and Samlesbury (H02). Pop ~140k.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1372,
+          50.8225
+        ]
+      },
+      "properties": {
+        "id": "I35",
+        "name": "Brighton and Hove",
+        "cat": "I",
+        "subcat": "South coast",
+        "tier": "T3",
+        "priority": 181,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "South coast. ~280k. University city, secondary commuter city for London.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8808,
+          50.7192
+        ]
+      },
+      "properties": {
+        "id": "I36",
+        "name": "Bournemouth / Poole",
+        "cat": "I",
+        "subcat": "South coast conurbation",
+        "tier": "T3",
+        "priority": 182,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "South coast conurbation ~470k including Christchurch. SBS HQ at Poole (C11).",
+        "notes": "Overlap C11 Poole SBS.",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2974,
+          52.6309
+        ]
+      },
+      "properties": {
+        "id": "I37",
+        "name": "Norwich",
+        "cat": "I",
+        "subcat": "East Anglia",
+        "tier": "T3",
+        "priority": 183,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "East Anglia regional centre. ~145k. Insurance/financial sector.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0873,
+          53.96
+        ]
+      },
+      "properties": {
+        "id": "I38",
+        "name": "York",
+        "cat": "I",
+        "subcat": "Yorkshire",
+        "tier": "T3",
+        "priority": 184,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "North Yorkshire. ~210k. Railway engineering (National Railway Museum, train maintenance).",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2405,
+          52.5695
+        ]
+      },
+      "properties": {
+        "id": "I39",
+        "name": "Peterborough",
+        "cat": "I",
+        "subcat": "East",
+        "tier": "T3",
+        "priority": 185,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Eastern England logistics hub. ~215k. A1/East Coast Main Line junction.",
+        "notes": "",
+        "sources": "ONS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4543,
+          51.47
+        ]
+      },
+      "properties": {
+        "id": "P01",
+        "name": "London Heathrow (LHR)",
+        "cat": "P",
+        "subcat": "Primary UK hub airport",
+        "tier": "T3",
+        "priority": 186,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK's primary international hub. ~80M pax/year. Strategic airlift capability. Jet fuel depot.",
+        "notes": "Partly covered by London GZ 3 (I03).",
+        "sources": "Heathrow"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1821,
+          51.1537
+        ]
+      },
+      "properties": {
+        "id": "P02",
+        "name": "London Gatwick (LGW)",
+        "cat": "P",
+        "subcat": "Secondary London hub",
+        "tier": "T3",
+        "priority": 187,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "2nd London airport. ~45M pax. Backup international routing.",
+        "notes": "",
+        "sources": "Gatwick"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3281,
+          52.8311
+        ]
+      },
+      "properties": {
+        "id": "P03",
+        "name": "East Midlands Airport (EMA)",
+        "cat": "P",
+        "subcat": "DHL/UPS cargo hub",
+        "tier": "T3",
+        "priority": 188,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "UK's largest pure-cargo airport (DHL, UPS, Royal Mail). Strategic logistics vulnerability.",
+        "notes": "",
+        "sources": "EMA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.275,
+          53.3537
+        ]
+      },
+      "properties": {
+        "id": "P04",
+        "name": "Manchester Airport (MAN)",
+        "cat": "P",
+        "subcat": "N England hub",
+        "tier": "T3",
+        "priority": 189,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Primary airport for N England and Scotland. ~28M pax. Adjacent to Manchester.",
+        "notes": "Covered by Manchester city strike (I05).",
+        "sources": "MAG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5867,
+          55.5094
+        ]
+      },
+      "properties": {
+        "id": "P05",
+        "name": "Prestwick Airport (PIK)",
+        "cat": "P",
+        "subcat": "NATO diversion + USAF transit",
+        "tier": "T3",
+        "priority": 190,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "NATO designated diversion airfield. USAF transatlantic transit hub. Historically: Cold War strategic use.",
+        "notes": "",
+        "sources": "Prestwick Airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3725,
+          55.95
+        ]
+      },
+      "properties": {
+        "id": "P06",
+        "name": "Edinburgh Airport (EDI)",
+        "cat": "P",
+        "subcat": "Scotland hub",
+        "tier": "T3",
+        "priority": 191,
+        "yield_kt": 300,
+        "burst": "air",
+        "height_m": 2000,
+        "rationale": "Busiest Scottish airport. Adjacent to Edinburgh city.",
+        "notes": "Covered by Edinburgh city strike (I12).",
+        "sources": "Edinburgh Airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2158,
+          54.6575
+        ]
+      },
+      "properties": {
+        "id": "P07",
+        "name": "Belfast International / Aldergrove (BFS)",
+        "cat": "P",
+        "subcat": "NI airport + military",
+        "tier": "T3",
+        "priority": 192,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Belfast International. Former RAF Aldergrove, 5 Regiment Army Air Corps present. Military-civil dual use.",
+        "notes": "",
+        "sources": "Belfast Airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.235,
+          51.885
+        ]
+      },
+      "properties": {
+        "id": "P08",
+        "name": "London Stansted (STN)",
+        "cat": "P",
+        "subcat": "London NE airport + cargo",
+        "tier": "T3",
+        "priority": 193,
+        "yield_kt": 100,
+        "burst": "air",
+        "height_m": 500,
+        "rationale": "Low-cost hub and freight. Amazon Air UK hub.",
+        "notes": "",
+        "sources": "Stansted"
+      }
+    }
+  ]
+}

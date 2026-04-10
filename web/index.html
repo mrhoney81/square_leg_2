@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square Leg 2 — Warhead Budget Planner</title>
+<link rel="icon" type="image/png" href="../nuke_icon.png">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --surface2: #0f3460;
+    --accent: #e94560;
+    --accent2: #f59e0b;
+    --text: #e0e0e0;
+    --muted: #8892a4;
+    --border: #2a3a5c;
+    --green: #10b981;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.5;
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 1rem; }
+
+  header { padding: 1.5rem 0 1rem; border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+  header h1 { font-size: 1.5rem; font-weight: 600; }
+  header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
+
+  .controls {
+    background: var(--surface); border-radius: 8px; padding: 1.25rem;
+    margin-bottom: 1rem; border: 1px solid var(--border);
+  }
+  .controls label { font-weight: 600; font-size: 0.9rem; }
+  .slider-row { display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem; }
+  .slider-row input[type=range] { flex: 1; accent-color: var(--accent); }
+  .slider-row input[type=number] {
+    width: 60px; background: var(--bg); border: 1px solid var(--border);
+    color: var(--text); padding: 0.3rem 0.5rem; border-radius: 4px;
+    font-size: 0.95rem; text-align: center;
+  }
+  .presets { margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .presets button {
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    padding: 0.35rem 0.75rem; border-radius: 4px; cursor: pointer;
+    font-size: 0.8rem; transition: all 0.15s;
+  }
+  .presets button:hover { background: var(--accent); border-color: var(--accent); }
+  .presets button.active { background: var(--accent); border-color: var(--accent); }
+  .filter-row { margin-top: 0.75rem; display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+  .checkbox-label {
+    display: flex; align-items: center; gap: 0.4rem; cursor: pointer;
+    font-weight: 600; font-size: 0.9rem;
+  }
+  .checkbox-label input { accent-color: var(--accent); width: 16px; height: 16px; cursor: pointer; }
+  .filter-hint { font-size: 0.75rem; color: var(--muted); }
+  .filter-params {
+    margin-top: 0.75rem; padding: 0.75rem; background: var(--bg);
+    border-radius: 6px; display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: flex-start;
+  }
+  .param-group { flex: 1; min-width: 220px; }
+  .param-group label { font-size: 0.8rem; font-weight: 600; display: block; margin-bottom: 0.3rem; }
+  .param-row { display: flex; align-items: center; gap: 0.5rem; }
+  .param-row input[type=range] { flex: 1; accent-color: var(--accent); }
+  .param-row input[type=number] {
+    width: 80px; background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); padding: 0.25rem 0.4rem; border-radius: 4px; font-size: 0.85rem; text-align: center;
+  }
+  .param-row select {
+    background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    padding: 0.3rem 0.5rem; border-radius: 4px; font-size: 0.85rem; width: 100%;
+  }
+  .param-hint { font-size: 0.7rem; color: var(--muted); margin-top: 0.2rem; display: block; }
+  .excluded-summary {
+    width: 100%; font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem;
+    max-height: 120px; overflow-y: auto; line-height: 1.4;
+  }
+  .excluded-summary .exc-item { color: var(--accent); }
+  .excluded-summary .exc-reason { color: var(--muted); }
+
+  .stats {
+    display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;
+  }
+  .stat {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.6rem 1rem; flex: 1; min-width: 140px;
+  }
+  .stat .val { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  #map {
+    height: 500px; border-radius: 8px; border: 1px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .downloads {
+    display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap;
+  }
+  .downloads button {
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;
+    font-size: 0.85rem; transition: all 0.15s; display: flex; align-items: center; gap: 0.4rem;
+  }
+  .downloads button:hover { background: var(--green); border-color: var(--green); color: #000; }
+
+  .table-wrap {
+    overflow-x: auto; border-radius: 8px; border: 1px solid var(--border);
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  thead { background: var(--surface2); position: sticky; top: 0; }
+  th { padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; white-space: nowrap; border-bottom: 2px solid var(--border); }
+  td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  tbody tr { background: var(--surface); }
+  tbody tr:hover { background: var(--surface2); }
+  .tier-badge {
+    display: inline-block; padding: 0.1rem 0.4rem; border-radius: 3px;
+    font-size: 0.7rem; font-weight: 700;
+  }
+  .tier-T1 { background: var(--accent); color: #fff; }
+  .tier-T2 { background: var(--accent2); color: #000; }
+  .tier-T3 { background: #6366f1; color: #fff; }
+  .cat-badge {
+    display: inline-block; padding: 0.1rem 0.35rem; border-radius: 3px;
+    font-size: 0.7rem; font-weight: 600; background: var(--surface2); color: var(--muted);
+  }
+  .burst-ground { color: var(--accent); font-weight: 600; }
+  .burst-air { color: var(--green); }
+  td.rationale { max-width: 350px; font-size: 0.78rem; color: var(--muted); }
+
+  footer { text-align: center; padding: 2rem 0 1rem; color: var(--muted); font-size: 0.75rem; }
+  footer a { color: var(--accent); }
+
+  /* Mobile card layout */
+  .card-list { display: none; }
+  .target-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+    padding: 0.75rem; margin-bottom: 0.5rem;
+  }
+  .card-header {
+    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.4rem;
+  }
+  .card-priority { color: var(--muted); font-size: 0.75rem; font-weight: 600; min-width: 1.5em; }
+  .card-name { font-weight: 700; font-size: 0.9rem; flex: 1; }
+  .card-meta {
+    display: flex; gap: 0.5rem; flex-wrap: wrap; font-size: 0.78rem; margin-bottom: 0.4rem;
+    align-items: center;
+  }
+  .card-meta span { white-space: nowrap; }
+  .card-yield { color: var(--accent2); font-weight: 600; }
+  .card-coords { color: var(--muted); font-size: 0.7rem; }
+  .card-rationale { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+
+  @media (max-width: 768px) {
+    .stats { gap: 0.5rem; }
+    .stat { min-width: 80px; padding: 0.4rem 0.6rem; }
+    .stat .val { font-size: 1.1rem; }
+    #map { height: 300px; }
+    .table-wrap { display: none; }
+    .card-list { display: block; }
+    .container { padding: 0.5rem; }
+    header h1 { font-size: 1.2rem; }
+    .presets { gap: 0.35rem; }
+    .presets button { padding: 0.3rem 0.5rem; font-size: 0.72rem; }
+    .downloads { gap: 0.4rem; }
+    .downloads button { padding: 0.4rem 0.6rem; font-size: 0.78rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Nuke the UK — Do you need to duck?</h1>
+    <p>Allocate a warhead budget and generate a prioritised target list. Targets ranked by a somewhat plausible strategic value.
+       Russia has ~1,500 deployed strategic warheads total (New START); realistic UK allocation is 30-80. Export to <a href="https://nuclearsecrecy.com/nukemap/">NUKEMAP</a> for the full terror.</p>
+  </header>
+
+  <div class="controls">
+    <label>Warhead budget</label>
+    <div class="slider-row">
+      <input type="range" id="slider" min="1" max="193" value="30">
+      <input type="number" id="budgetNum" min="1" max="193" value="30">
+    </div>
+    <div class="presets">
+      <button data-n="9" data-t1only="true">Nuclear counterforce (9)</button>
+      <button data-n="20">Counterforce + C2 (20)</button>
+      <button data-n="30" class="active">Limited strike (30)</button>
+      <button data-n="50">Major strike (50)</button>
+      <button data-n="80">Sustained (80)</button>
+      <button data-n="100">Full military (100)</button>
+      <button data-n="148">Military + infra (148)</button>
+      <button data-n="193">All-out (193)</button>
+    </div>
+    <div class="filter-row">
+      <label class="checkbox-label">
+        <input type="checkbox" id="skipCities">
+        <span>Avoid population centres</span>
+      </label>
+      <span class="filter-hint">Excludes any target whose blast radius overlaps a settlement above the population threshold. Uses Glasstone &amp; Dolan cube-root scaling for overpressure radius.</span>
+    </div>
+    <div class="filter-params" id="filterParams" style="display:none">
+      <div class="param-group">
+        <label>Min. population to protect</label>
+        <div class="param-row">
+          <input type="range" id="popSlider" min="10000" max="500000" step="10000" value="100000">
+          <input type="number" id="popNum" min="1000" max="5000000" step="1000" value="100000">
+        </div>
+        <span class="param-hint">Settlements below this population are ignored. Default 100,000.</span>
+      </div>
+      <div class="param-group">
+        <label>Overpressure threshold</label>
+        <div class="param-row">
+          <select id="psiSelect">
+            <option value="5">5 psi — severe structural damage</option>
+            <option value="3" selected>3 psi — moderate damage / casualties</option>
+            <option value="1">1 psi — light damage / window breakage</option>
+          </select>
+        </div>
+      </div>
+      <div class="excluded-summary" id="excludedSummary"></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="val" id="statTargets">30</div><div class="label">Targets</div></div>
+    <div class="stat"><div class="val" id="statYield">—</div><div class="label">Total yield (kt)</div></div>
+    <div class="stat"><div class="val" id="statMt">—</div><div class="label">Megatons</div></div>
+    <div class="stat"><div class="val" id="statGround">—</div><div class="label">Ground bursts</div></div>
+    <div class="stat"><div class="val" id="statCats">—</div><div class="label">Categories hit</div></div>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="downloads">
+    <button onclick="downloadNukemap()">Download NUKEMAP CSV</button>
+    <button onclick="downloadKML()">Download KML (Google Earth)</button>
+    <button onclick="downloadCSV()">Download full CSV</button>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>ID</th><th>Target</th><th>Cat</th><th>Tier</th>
+          <th>Yield</th><th>Burst</th><th>Lat</th><th>Lon</th><th>Rationale</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="card-list" id="cardList"></div>
+
+  <footer>
+    Square Leg 2 — civil-defence and deterrence research.
+    All sites are publicly known. Data: <a href="https://github.com/">generate.py</a>.
+    Map tiles &copy; OpenStreetMap contributors.
+  </footer>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const CAT_COLORS = {
+  A: '#e94560', B: '#f59e0b', C: '#8b5cf6', D: '#3b82f6',
+  E: '#06b6d4', F: '#84cc16', G: '#f97316', H: '#ec4899',
+  I: '#ef4444', J: '#14b8a6', K: '#eab308', L: '#a855f7',
+  M: '#6366f1', N: '#22d3ee', O: '#10b981', P: '#f43f5e',
+};
+
+let allTargets = [];
+let categories = {};
+let categoryDoctrine = {};
+let map, markersLayer;
+
+// ---------------------------------------------------------------------------
+// UK settlements — name, lat, lon, population (ONS mid-year estimates ~2023)
+// Covers all cities/large towns that might fall within blast radius of a target.
+// ---------------------------------------------------------------------------
+const UK_SETTLEMENTS = [
+  // Major cities
+  {n:'London',lat:51.507,lon:-0.128,pop:8800000},
+  {n:'Birmingham',lat:52.486,lon:-1.890,pop:1145000},
+  {n:'Leeds',lat:53.801,lon:-1.549,pop:812000},
+  {n:'Glasgow',lat:55.864,lon:-4.252,pop:635000},
+  {n:'Sheffield',lat:53.383,lon:-1.470,pop:557000},
+  {n:'Manchester',lat:53.481,lon:-2.243,pop:553000},
+  {n:'Bradford',lat:53.796,lon:-1.759,pop:540000},
+  {n:'Liverpool',lat:53.408,lon:-2.992,pop:496000},
+  {n:'Edinburgh',lat:55.953,lon:-3.189,pop:527000},
+  {n:'Bristol',lat:51.455,lon:-2.588,pop:472000},
+  {n:'Cardiff',lat:51.482,lon:-3.179,pop:362000},
+  {n:'Belfast',lat:54.597,lon:-5.930,pop:345000},
+  {n:'Leicester',lat:52.637,lon:-1.140,pop:368000},
+  {n:'Coventry',lat:52.407,lon:-1.520,pop:345000},
+  {n:'Nottingham',lat:52.955,lon:-1.158,pop:332000},
+  {n:'Newcastle',lat:54.978,lon:-1.618,pop:302000},
+  {n:'Sunderland',lat:54.907,lon:-1.383,pop:275000},
+  {n:'Brighton',lat:50.823,lon:-0.137,pop:274000},
+  {n:'Plymouth',lat:50.376,lon:-4.143,pop:264000},
+  {n:'Wolverhampton',lat:52.586,lon:-2.128,pop:264000},
+  {n:'Derby',lat:52.923,lon:-1.475,pop:260000},
+  {n:'Southampton',lat:50.905,lon:-1.405,pop:254000},
+  {n:'Stoke-on-Trent',lat:53.003,lon:-2.179,pop:253000},
+  {n:'Reading',lat:51.454,lon:-0.978,pop:230000},
+  {n:'Kingston upon Hull',lat:53.746,lon:-0.337,pop:260000},
+  {n:'Aberdeen',lat:57.150,lon:-2.094,pop:229000},
+  {n:'Portsmouth',lat:50.804,lon:-1.088,pop:215000},
+  {n:'Swansea',lat:51.621,lon:-3.944,pop:246000},
+  {n:'Milton Keynes',lat:52.041,lon:-0.759,pop:229000},
+  {n:'Middlesbrough',lat:54.574,lon:-1.235,pop:201000},
+  {n:'Bolton',lat:53.578,lon:-2.429,pop:195000},
+  {n:'Bournemouth',lat:50.719,lon:-1.881,pop:197000},
+  {n:'Norwich',lat:52.631,lon:1.297,pop:213000},
+  {n:'Luton',lat:51.879,lon:-0.418,pop:213000},
+  {n:'Preston',lat:53.763,lon:-2.703,pop:145000},
+  {n:'Peterborough',lat:52.570,lon:-0.241,pop:203000},
+  {n:'Dundee',lat:56.462,lon:-2.971,pop:149000},
+  {n:'York',lat:53.960,lon:-1.087,pop:211000},
+  {n:'Oxford',lat:51.752,lon:-1.258,pop:152000},
+  {n:'Cambridge',lat:52.205,lon:0.122,pop:146000},
+  // Larger towns near military targets
+  {n:'Cheltenham',lat:51.900,lon:-2.074,pop:120000},
+  {n:'Harrow',lat:51.579,lon:-0.342,pop:251000},
+  {n:'Watford',lat:51.660,lon:-0.397,pop:97000},
+  {n:'Uxbridge',lat:51.546,lon:-0.476,pop:73000},
+  {n:'High Wycombe',lat:51.629,lon:-0.749,pop:120000},
+  {n:'Stevenage',lat:51.902,lon:-0.202,pop:90000},
+  {n:'Colchester',lat:51.889,lon:0.904,pop:122000},
+  {n:'Aldershot',lat:51.249,lon:-0.764,pop:72000},
+  {n:'Andover',lat:51.207,lon:-1.479,pop:53000},
+  {n:'Salisbury',lat:51.069,lon:-1.795,pop:45000},
+  {n:'Catterick',lat:54.374,lon:-1.634,pop:14000},
+  {n:'Hereford',lat:52.056,lon:-2.716,pop:63000},
+  {n:'Poole',lat:50.721,lon:-1.980,pop:155000},
+  {n:'Fareham',lat:50.852,lon:-1.180,pop:116000},
+  {n:'Gosport',lat:50.795,lon:-1.184,pop:84000},
+  {n:'Helensburgh',lat:56.007,lon:-4.733,pop:16000},
+  {n:'Dumbarton',lat:55.945,lon:-4.576,pop:20000},
+  {n:'Barrow-in-Furness',lat:54.111,lon:-3.227,pop:67000},
+  {n:'Penrith',lat:54.664,lon:-2.753,pop:16000},
+  {n:'Whitby',lat:54.486,lon:-0.618,pop:13000},
+  {n:'Scarborough',lat:54.275,lon:-0.402,pop:61000},
+  {n:'Lincoln',lat:53.234,lon:-0.538,pop:104000},
+  {n:'Stamford',lat:52.652,lon:-0.484,pop:22000},
+  {n:'Sleaford',lat:52.998,lon:-0.411,pop:18000},
+  {n:'Lossiemouth',lat:57.721,lon:-3.284,pop:7000},
+  {n:'Faslane village',lat:56.068,lon:-4.821,pop:1000},
+  {n:'Bude',lat:50.830,lon:-4.544,pop:10000},
+  {n:'Newquay',lat:50.412,lon:-5.076,pop:22000},
+  {n:'Helston',lat:50.100,lon:-5.271,pop:13000},
+  {n:'Yeovil',lat:50.942,lon:-2.637,pop:49000},
+  {n:'Warton',lat:53.745,lon:-2.883,pop:8000},
+  {n:'Samlesbury',lat:53.775,lon:-2.574,pop:2000},
+  {n:'Grangemouth',lat:56.012,lon:-3.717,pop:17000},
+  {n:'Milford Haven',lat:51.712,lon:-5.043,pop:14000},
+  {n:'Felixstowe',lat:51.961,lon:1.351,pop:29000},
+  {n:'Immingham',lat:53.613,lon:-0.214,pop:11000},
+  {n:'Dover',lat:51.128,lon:1.313,pop:35000},
+  {n:'Grimsby',lat:53.567,lon:-0.080,pop:89000},
+  {n:'Tilbury',lat:51.461,lon:0.358,pop:13000},
+  {n:'Slough',lat:51.511,lon:-0.593,pop:164000},
+  {n:'Farnborough',lat:51.294,lon:-0.756,pop:65000},
+  {n:'Wokingham',lat:51.411,lon:-0.834,pop:42000},
+  {n:'Folkestone',lat:51.081,lon:1.166,pop:53000},
+  {n:'Newport',lat:51.589,lon:-2.999,pop:155000},
+  {n:'Selby',lat:53.782,lon:-1.070,pop:15000},
+  {n:'Inverness',lat:57.478,lon:-4.224,pop:63000},
+  {n:'Thurso',lat:58.593,lon:-3.522,pop:8000},
+  {n:'Lerwick',lat:60.155,lon:-1.145,pop:7000},
+];
+
+// Glasstone & Dolan overpressure radii at 1 kt (optimal airburst), in km
+const PSI_RADII_1KT = { 5: 0.71, 3: 0.96, 1: 1.91 };
+
+function overpressureRadiusKm(yieldKt, burstMode, psiLevel) {
+  const r1kt = PSI_RADII_1KT[psiLevel] || PSI_RADII_1KT[3];
+  let r = r1kt * Math.pow(yieldKt, 1/3);
+  if (burstMode === 'ground') r *= 0.8; // ground burst: ~80% of airburst radius
+  return r;
+}
+
+function distKm(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+// Returns {excluded: bool, reason: string|null} for a target
+function checkUrbanExclusion(t, popThreshold, psiLevel) {
+  const r = overpressureRadiusKm(t.yield_kt, t.burst, psiLevel);
+  for (const s of UK_SETTLEMENTS) {
+    if (s.pop < popThreshold) continue;
+    const d = distKm(t.lat, t.lon, s.lat, s.lon);
+    if (d < r) {
+      return {
+        excluded: true,
+        reason: `${s.n} (${(s.pop/1000).toFixed(0)}k) ${d.toFixed(1)}km away, within ${r.toFixed(1)}km ${psiLevel}-psi radius`
+      };
+    }
+  }
+  return { excluded: false, reason: null };
+}
+
+// Init map
+map = L.map('map', { scrollWheelZoom: true }).setView([54.5, -2.5], 6);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OSM &copy; CARTO',
+  maxZoom: 18,
+}).addTo(map);
+markersLayer = L.layerGroup().addTo(map);
+
+// Load data
+fetch('../targets.json')
+  .then(r => r.json())
+  .then(data => {
+    allTargets = data.targets;
+    categories = data.categories;
+    categoryDoctrine = data.category_doctrine;
+    update();
+  })
+  .catch(err => {
+    document.getElementById('tbody').innerHTML =
+      '<tr><td colspan="10" style="text-align:center;padding:2rem;color:var(--accent)">Failed to load targets.json. Run python3 generate.py first, then serve from the repo root.</td></tr>';
+  });
+
+// Slider / input sync
+const slider = document.getElementById('slider');
+const budgetNum = document.getElementById('budgetNum');
+slider.addEventListener('input', () => { budgetNum.value = slider.value; update(); });
+budgetNum.addEventListener('change', () => {
+  let v = Math.max(1, Math.min(193, parseInt(budgetNum.value) || 1));
+  budgetNum.value = v; slider.value = v; update();
+});
+
+// Preset buttons
+let t1OnlyMode = false;
+
+document.querySelectorAll('.presets button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const n = parseInt(btn.dataset.n);
+    slider.value = n; budgetNum.value = n;
+    t1OnlyMode = !!btn.dataset.t1only;
+    document.querySelectorAll('.presets button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    update();
+  });
+});
+
+// Clear T1-only mode when user manually adjusts slider/budget
+slider.addEventListener('input', () => { t1OnlyMode = false; });
+budgetNum.addEventListener('change', () => { t1OnlyMode = false; });
+
+const skipCitiesCb = document.getElementById('skipCities');
+const filterParamsDiv = document.getElementById('filterParams');
+const popSlider = document.getElementById('popSlider');
+const popNum = document.getElementById('popNum');
+const psiSelect = document.getElementById('psiSelect');
+
+skipCitiesCb.addEventListener('change', () => {
+  filterParamsDiv.style.display = skipCitiesCb.checked ? 'flex' : 'none';
+  update();
+});
+popSlider.addEventListener('input', () => { popNum.value = popSlider.value; update(); });
+popNum.addEventListener('change', () => {
+  let v = Math.max(1000, parseInt(popNum.value) || 100000);
+  popNum.value = v; popSlider.value = Math.min(500000, v); update();
+});
+psiSelect.addEventListener('change', update);
+
+// Cache exclusion results for current params
+let exclusionCache = new Map();
+let lastExclusionParams = '';
+
+function getExclusionResults() {
+  const popThreshold = parseInt(popNum.value);
+  const psi = parseInt(psiSelect.value);
+  const cacheKey = `${popThreshold}_${psi}`;
+  if (cacheKey !== lastExclusionParams) {
+    exclusionCache = new Map();
+    for (const t of allTargets) {
+      exclusionCache.set(t.id, checkUrbanExclusion(t, popThreshold, psi));
+    }
+    lastExclusionParams = cacheKey;
+  }
+  return exclusionCache;
+}
+
+function getSelected() {
+  const n = parseInt(slider.value);
+  const skipCities = skipCitiesCb.checked;
+  const cache = skipCities ? getExclusionResults() : null;
+
+  // T1-only mode: only include tier T1 targets (nuclear counterforce)
+  if (t1OnlyMode) {
+    return { selected: allTargets.filter(t => t.tier === 'T1'), excluded: [] };
+  }
+
+  if (!skipCities) {
+    return { selected: allTargets.filter(t => t.priority <= n), excluded: [] };
+  }
+
+  const selected = [];
+  const excluded = [];
+  for (const t of allTargets) {
+    if (selected.length >= n) break;
+    const ex = cache.get(t.id);
+    if (ex && ex.excluded) {
+      excluded.push({ target: t, reason: ex.reason });
+    } else {
+      selected.push(t);
+    }
+  }
+  return { selected, excluded };
+}
+
+function update() {
+  const { selected, excluded } = getSelected();
+  const n = parseInt(slider.value);
+
+  // Update preset highlights
+  document.querySelectorAll('.presets button').forEach(b => {
+    b.classList.toggle('active', parseInt(b.dataset.n) === n);
+  });
+
+  // Stats
+  const totalYield = selected.reduce((s, t) => s + t.yield_kt, 0);
+  const groundBursts = selected.filter(t => t.burst === 'ground').length;
+  const catsHit = new Set(selected.map(t => t.cat)).size;
+  document.getElementById('statTargets').textContent = selected.length;
+  document.getElementById('statYield').textContent = totalYield.toLocaleString();
+  document.getElementById('statMt').textContent = (totalYield / 1000).toFixed(1);
+  document.getElementById('statGround').textContent = groundBursts;
+  document.getElementById('statCats').textContent = catsHit + ' / 16';
+
+  // Excluded summary
+  const summaryDiv = document.getElementById('excludedSummary');
+  if (skipCitiesCb.checked && excluded.length > 0) {
+    summaryDiv.innerHTML = `<b>${excluded.length} targets excluded:</b><br>` +
+      excluded.map(e =>
+        `<span class="exc-item">${e.target.id} ${e.target.name}</span> ` +
+        `<span class="exc-reason">— ${e.reason}</span>`
+      ).join('<br>');
+  } else {
+    summaryDiv.innerHTML = '';
+  }
+
+  // Map
+  markersLayer.clearLayers();
+  selected.forEach(t => {
+    const color = CAT_COLORS[t.cat] || '#888';
+    const radius = Math.max(4, Math.sqrt(t.yield_kt / 100) * 4);
+    L.circleMarker([t.lat, t.lon], {
+      radius: radius,
+      fillColor: color,
+      color: t.burst === 'ground' ? '#fff' : color,
+      weight: t.burst === 'ground' ? 2 : 1,
+      fillOpacity: 0.8,
+    }).bindPopup(
+      `<b>#${t.priority} ${t.name}</b><br>` +
+      `<span style="color:${color}">${t.cat}</span> — ${categories[t.cat] || ''}<br>` +
+      `${t.yield_kt} kt ${t.burst} burst<br>` +
+      `<small>${t.rationale}</small>`
+    ).addTo(markersLayer);
+  });
+
+  // Table (desktop)
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = selected.map(t =>
+    `<tr>
+      <td>${t.priority}</td>
+      <td>${t.id}</td>
+      <td><b>${t.name}</b></td>
+      <td><span class="cat-badge">${t.cat}</span></td>
+      <td><span class="tier-badge tier-${t.tier}">${t.tier}</span></td>
+      <td>${t.yield_kt} kt</td>
+      <td class="${t.burst === 'ground' ? 'burst-ground' : 'burst-air'}">${t.burst}</td>
+      <td>${t.lat.toFixed(4)}</td>
+      <td>${t.lon.toFixed(4)}</td>
+      <td class="rationale">${t.rationale}</td>
+    </tr>`
+  ).join('');
+
+  // Cards (mobile)
+  const cardList = document.getElementById('cardList');
+  cardList.innerHTML = selected.map(t => {
+    const burstClass = t.burst === 'ground' ? 'burst-ground' : 'burst-air';
+    return `<div class="target-card">
+      <div class="card-header">
+        <span class="card-priority">#${t.priority}</span>
+        <span class="card-name">${t.name}</span>
+        <span class="tier-badge tier-${t.tier}">${t.tier}</span>
+      </div>
+      <div class="card-meta">
+        <span class="cat-badge">${t.cat}</span>
+        <span class="card-yield">${t.yield_kt} kt</span>
+        <span class="${burstClass}">${t.burst}</span>
+        <span class="card-coords">${t.lat.toFixed(4)}, ${t.lon.toFixed(4)}</span>
+      </div>
+      <div class="card-rationale">${t.rationale}</div>
+    </div>`;
+  }).join('');
+}
+
+// --- Downloads ---
+
+function downloadBlob(content, filename, mime) {
+  const blob = new Blob([content], { type: mime });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function downloadNukemap() {
+  const { selected } = getSelected();
+  const M_TO_FT = 3.28084;
+  let csv = 'yieldKt,latitude,longitude,heightOfBurstFt,showFallout,falloutWindSpeed,falloutWindDirection,fissionFraction\n';
+  selected.forEach(t => {
+    const hft = Math.round(t.height_m * M_TO_FT);
+    const fallout = t.burst === 'ground' ? 1 : 0;
+    csv += `${t.yield_kt},${t.lat},${t.lon},${hft},${fallout},15,225,50\n`;
+  });
+  downloadBlob(csv, `squareleg2_nukemap_${selected.length}targets.csv`, 'text/csv');
+}
+
+function downloadKML() {
+  const { selected } = getSelected();
+  const styles = Object.entries(CAT_COLORS).map(([cat, hex]) => {
+    // KML uses aaBBGGRR
+    const r = hex.slice(1,3), g = hex.slice(3,5), b = hex.slice(5,7);
+    const kmlColor = `ff${b}${g}${r}`;
+    return `<Style id="cat${cat}"><IconStyle><color>${kmlColor}</color><scale>0.8</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/target.png</href></Icon></IconStyle></Style>`;
+  }).join('\n');
+
+  const placemarks = selected.map(t => `
+    <Placemark>
+      <name>#${t.priority} ${escXml(t.name)}</name>
+      <description><![CDATA[
+        <b>Category:</b> ${t.cat} — ${escXml(categories[t.cat] || '')}<br>
+        <b>Tier:</b> ${t.tier}<br>
+        <b>Yield:</b> ${t.yield_kt} kt (${t.burst} burst)<br>
+        <b>Priority:</b> ${t.priority} of ${allTargets.length}<br>
+        <b>Rationale:</b> ${escXml(t.rationale)}
+      ]]></description>
+      <styleUrl>#cat${t.cat}</styleUrl>
+      <Point><coordinates>${t.lon},${t.lat},0</coordinates></Point>
+    </Placemark>`).join('\n');
+
+  const kml = `<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Square Leg 2 — ${selected.length} targets</name>
+  <description>Warhead budget: ${selected.length}. Generated by Square Leg 2 planner.</description>
+  ${styles}
+  ${placemarks}
+</Document>
+</kml>`;
+  downloadBlob(kml, `squareleg2_${selected.length}targets.kml`, 'application/vnd.google-earth.kml+xml');
+}
+
+function downloadCSV() {
+  const { selected } = getSelected();
+  const fields = ['priority','id','name','cat','subcat','tier','lat','lon','yield_kt','burst','height_m','rationale','notes','sources'];
+  let csv = fields.join(',') + '\n';
+  selected.forEach(t => {
+    csv += fields.map(f => {
+      let v = String(t[f] ?? '');
+      if (v.includes(',') || v.includes('"') || v.includes('\n')) {
+        v = '"' + v.replace(/"/g, '""') + '"';
+      }
+      return v;
+    }).join(',') + '\n';
+  });
+  downloadBlob(csv, `squareleg2_${selected.length}targets.csv`, 'text/csv');
+}
+
+function escXml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>

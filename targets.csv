@@ -1,0 +1,194 @@
+id,name,cat,subcat,tier,priority,lat,lon,yield_kt,burst,height_m,rationale,notes,sources
+A03,HMNB Clyde (Faslane),A,SSBN operating base,T1,1,56.0669,-4.8267,475,air,500,Sole Royal Navy SSBN and SSN operating base. Single point of failure for UK deterrent at sea. Airburst to destroy submarines in port and base infrastructure.,Multi-warhead strike likely. Also cat E (naval base).,RN
+A04,RNAD Coulport,A,Warhead storage,T1,2,56.055,-4.8792,475,ground,0,Strategic warhead storage and torpedo loading for Trident submarines. 8 miles from Faslane.,,RN
+A01,AWE Aldermaston,A,Warhead design/production,T1,3,51.3683,-1.1394,100,air,500,"UK nuclear warhead design, plutonium processing, tritium. Sprawling above-ground campus — airburst sufficient.",Companion to Burghfield (assembly).,AWE
+A02,AWE Burghfield,A,Warhead assembly,T1,4,51.3989,-1.0544,100,air,500,UK warhead final assembly and dismantling. Sole site for this function. Soft industrial target.,,AWE
+A05,HMNB Devonport,A,SSN refit + nuclear drydock,T1,5,50.3833,-4.1833,475,air,500,Largest naval base in Western Europe. Only UK facility able to refit nuclear submarines. Airburst to destroy drydocks and ships in refit.,Also cat E (naval base). Adjacent Plymouth city (I37).,"Babcock, RN"
+A06,BAE Systems Barrow-in-Furness,A,SSBN/SSN construction,T1,6,54.113,-3.2347,100,air,500,"Sole UK shipyard building nuclear submarines (Astute-class SSN, Dreadnought-class SSBN). Irreplaceable industrial capability. Soft industrial site — airburst sufficient.",Also cat H (defence industry).,BAE Systems
+A07,"Rolls-Royce Raynesway, Derby",A,Naval reactor production,T1,7,52.9175,-1.43,100,air,500,Only UK facility producing naval nuclear reactor cores (PWR2/PWR3). Sole-source supplier for SSN/SSBN propulsion. Soft industrial site.,Also cat H. Adjacent Derby city (I20).,Rolls-Royce
+B01,RAF Lakenheath,B,"USAF strike (F-35A, B61-12)",T1,8,52.4093,0.561,100,air,500,48th FW: F-35As joining F-15Es. Reportedly hosting B61-12 gravity bombs from 2024. Largest USAF combat base in Europe.,Also cat D (RAF base).,"USAFE, open sources"
+B05,RAF Fylingdales,B,BMEWS early warning radar,T1,9,54.3614,-0.67,475,ground,0,Solid-state phased array radar (SSPARS). Part of US Ballistic Missile Early Warning System and Space Surveillance Network.,Also cat G. Hardened structure — groundburst.,MoD
+B04,RAF Menwith Hill,B,NSA/GCHQ SIGINT station,T2,10,54.0086,-1.6883,100,air,500,"Largest NSA station outside the US. 30+ radomes. ECHELON/FIVE EYES overhead SIGINT processing hub. SIGINT, not directly nuclear forces.",Also cat G (radar/SIGINT).,"NSA, public record"
+C02,Northwood HQ,C,PJHQ + NATO MARCOM,T2,11,51.605,-0.4172,475,ground,0,UK Permanent Joint Headquarters (all UK joint ops) and NATO Maritime Command. Global military command node.,,"MoD, NATO"
+C06,GCHQ Cheltenham,C,SIGINT HQ,T2,12,51.8986,-2.1244,100,air,500,GCHQ Doughnut. UK signals intelligence and cyber HQ. Five Eyes keystone. Modern above-ground office complex — airburst sufficient.,,GCHQ
+C03,RAF High Wycombe (Air Command HQ),C,RAF headquarters,T2,13,51.6344,-0.8072,100,air,500,HQ Air Command. Command and control of all RAF operational forces. Underground operations centre.,,RAF
+C01,PINDAR / Whitehall (Cabinet Office),C,Crisis command bunker,T2,14,51.504,-0.128,800,air,2000,Cabinet Office crisis management centre under MoD Main Building. Part of 3-GZ London strike. COBR/COBRA crisis management.,Overlap with London GZ 2 (I02).,Declassified records
+C09,Credenhill (22 SAS / UKSF HQ),C,UK Special Forces HQ,T2,15,52.0897,-2.8158,100,air,500,HQ 22 SAS Regiment and UK Special Forces since 1999. UKSF operational base and strategic reserve capability.,,Public record
+C07,MI5 Thames House,C,Security Service HQ,T2,16,51.4942,-0.125,800,air,2000,"MI5 headquarters, Millbank. Internal security decapitation.",Covered by London GZ 2 (I02).,Public record
+C08,MI6 Vauxhall Cross,C,SIS HQ,T2,17,51.4872,-0.1244,800,air,2000,MI6 / SIS headquarters. Foreign intelligence decapitation.,Covered by London GZ 2 (I02).,Public record
+K01,Sellafield,K,Reprocessing + legacy high-level waste,T2,18,54.4208,-3.4961,100,ground,0,"Magnox reprocessing, THORP, ~140 tonnes Pu stored, high-level waste tanks, legacy ponds. Single most radiologically hazardous target in the UK. Groundburst to contaminate site and deny access.",Arguably strategic counterforce-level target due to Pu inventory.,NDA
+L06,St Fergus Gas Terminal,L,Gas import terminal,T2,19,57.5544,-1.84,475,ground,0,~40% of UK gas lands here via North Sea and Norwegian Vesterled pipeline. Destroying it collapses UK gas supply. Strategic energy chokepoint.,Hardened/buried pipework — groundburst.,National Gas
+N01,Widemouth Bay cable landing (Cornwall),N,Transatlantic cable bundle,T2,20,50.7919,-4.5561,100,air,500,"Primary UK transatlantic cable bundle: TAT-14, Apollo North, Yellow, FLAG Atlantic, AEConnect. Severs most UK-US fibre capacity.",GCHQ Bude 3 miles north (G07).,TeleGeography
+E01,HMNB Portsmouth,E,Carrier + fleet base,T2,21,50.8036,-1.1092,475,air,500,"Home port of QE-class carriers, Type 45 destroyers, Type 23/26 frigates. Airburst to destroy ships in port and dockyard infrastructure.",Also cat C (Navy Command nearby) and cat I (Portsmouth city I38).,RN
+D01,RAF Coningsby,D,Typhoon QRA South,T2,22,53.093,-0.1658,100,air,500,Quick Reaction Alert (South). Multiple Typhoon squadrons. Battle of Britain Memorial Flight.,,RAF
+D02,RAF Lossiemouth,D,Typhoon QRA North + P-8 Poseidon,T2,23,57.7053,-3.3392,100,air,500,QRA (Interceptor) North. All UK P-8A Poseidon maritime patrol aircraft. Covers GIUK gap ASW.,,RAF
+D03,RAF Marham,D,F-35B Lightning force,T2,24,52.6486,0.5506,100,air,500,617 Sqn and 207 OCU F-35B Lightning. UK's principal strike aircraft base.,,RAF
+D04,RAF Waddington,D,ISTAR / intelligence aircraft,T2,25,53.1662,-0.5236,100,air,500,"RC-135W Rivet Joint SIGINT, Sentinel R1, Shadow R2, Protector RG1 RPAS. All UK airborne intelligence assets.",,RAF
+D05,RAF Brize Norton,D,Strategic transport + tanker,T2,26,51.75,-1.5836,100,air,500,"UK strategic air transport hub. Voyager tanker, C-17, A400M Atlas. Sole air bridge for power projection.",,RAF
+D06,RAF Odiham,D,Chinook heavy-lift,T2,27,51.2344,-0.9428,100,air,500,Sole Chinook HC6/6A operating base. Critical heavy helicopter lift for land forces.,,RAF
+B02,RAF Mildenhall,B,USAF tankers + AFSOC,T2,28,52.3614,0.4864,100,air,500,100th ARW (KC-135 tankers) and 352nd SOW (special operations). 7 miles from Lakenheath.,,USAFE
+B03,RAF Croughton,B,USAF global comms relay,T2,29,51.9856,-1.1872,100,air,500,USAF 422nd ABG. Major satellite relay hub linking European and CONUS command networks. NSA presence.,,USAF
+B06,RAF Welford,B,USAF conventional munitions storage,T2,30,51.4714,-1.3844,475,ground,0,"Largest USAF conventional munitions storage site in Europe. 100+ earth-covered bunkers. Nuclear weapons stored in WS3 vaults at operating bases, not here.",,USAF
+B10,RAF Fairford,B,USAF strategic bomber forward base,T2,31,51.6822,-1.79,100,air,500,"Forward operating location for US strategic bombers (B-52, B-2, B-1B). Routine rotations. Longest military runway in UK. Soft airfield target.",,USAFE
+B07,RAF Alconbury,B,USAF intelligence,T2,32,52.3719,-0.2292,100,air,500,501st CSW. Co-located with Joint Analysis Center Molesworth. USAF intelligence fusion for EUCOM/AFRICOM.,Effectively same complex as B08 Molesworth.,USAF
+B08,RAF Molesworth,B,Joint Analysis Center,T2,33,52.3761,-0.4114,100,air,500,Joint Analysis Center — primary USAF intelligence facility in UK. 3 miles west of Alconbury.,,USAF
+B09,RAF Feltwell,B,USSF Space Surveillance + support,T2,34,52.4914,0.5386,100,air,500,5th Space Surveillance Squadron optical telescope site. Housing and support functions for Lakenheath/Mildenhall cluster.,,USSF
+H01,BAE Systems Warton,H,Typhoon/F-35 final assembly + Tempest,T2,35,53.7453,-2.8839,100,air,500,"Typhoon Eurofighter final assembly, F-35 rear fuselage production, GCAP/Tempest development. UK's principal combat aircraft plant.",Adjacent to Samlesbury (H02).,BAE Systems
+H02,BAE Systems Samlesbury,H,F-35 + Typhoon fuselage,T2,36,53.7761,-2.5733,100,air,500,F-35B rear fuselage and Typhoon airframe structures. Sister site to Warton 12 miles away.,,BAE Systems
+H03,BAE Systems Scotstoun,H,Type 26/31 frigates,T2,37,55.8753,-4.3533,100,air,500,Assembly of Type 26 City-class frigates (ASW hull). Adjacent to Govan.,Adjacent to H04 Govan on Clyde.,BAE Systems
+H04,BAE Systems Govan,H,Type 26/31 frigates,T2,38,55.8681,-4.3075,100,air,500,Hull block fabrication for Type 26 frigates. Paired operation with Scotstoun on the Clyde.,,BAE Systems
+H06,MBDA Stevenage,H,Missile design HQ,T2,39,51.9033,-0.2019,100,air,500,"MBDA UK HQ and design centre. Meteor, Brimstone, CAMM/Sea Ceptor, SPEAR, legacy Storm Shadow. UK's primary missile design capability.",,MBDA
+C04,Army HQ Andover (Marlborough Lines),C,British Army HQ,T2,40,51.2089,-1.4844,100,air,500,"HQ British Army at Marlborough Lines, Andover. Top-level army command.",,British Army
+C05,Navy Command Portsmouth (Portsdown Hill),C,Royal Navy HQ,T2,41,50.85,-1.1,100,air,500,HQ Navy Command on Portsdown Hill. Royal Navy operational command node.,Partially covered by HMNB Portsmouth strike (E01).,RN
+C10,RM Poole (SBS HQ),C,UK Special Forces (maritime),T2,42,50.6992,-1.9436,100,air,500,HQ Special Boat Service. UK maritime special forces base.,,Public record
+G07,GCHQ Bude (Morwenstow satellite station),G,Satellite SIGINT + cable tap,T2,43,50.8911,-4.5544,100,air,500,GCHQ satellite intercept station. Adjacent to primary transatlantic cable landings (Widemouth Bay). Taps both satellite and undersea fibre.,Also cat N.,GCHQ
+G08,GCHQ Scarborough (Irton Moor),G,HF SIGINT,T2,44,54.2567,-0.4839,100,air,500,HF direction-finding and SIGINT station. Part of GCHQ's regional collection network.,,GCHQ
+E02,RNAS Yeovilton,E,Wildcat + Commando Helicopter,T2,45,51.0094,-2.6389,100,air,500,Wildcat HMA2 maritime attack and Commando Helicopter Force (Merlin Mk4). RM aviation.,,RN
+E03,RNAS Culdrose,E,Merlin ASW + AEW,T2,46,50.0864,-5.2564,100,air,500,Merlin HM2 ASW and Crowsnest AEW helicopters. Largest helicopter base in Europe.,,RN
+E04,HMS Collingwood (Fareham),E,Maritime Warfare School,T2,47,50.8333,-1.1667,100,air,500,Maritime Warfare School and weapons engineering. Largest Royal Navy training establishment.,,RN
+E06,RNAD Gosport (Frater/Bedenham),E,Naval armament depot,T2,48,50.8094,-1.1544,475,ground,0,Royal Naval Armament Depot. Surface fleet munitions storage. Groundburst to destroy ordnance.,,"RN, DE&S"
+E07,DM Glen Douglas,E,NATO munitions depot,T2,49,56.1181,-4.7642,475,ground,0,Defence Munitions Glen Douglas. Largest conventional munitions depot in Western Europe. NATO-tasked.,,DE&S
+E08,Babcock Rosyth Dockyard,E,Carrier refit + surface support,T2,50,56.0194,-3.4419,100,air,500,QE-class carrier assembly site (complete ship assembly here). Ongoing RN surface vessel refit.,Also cat H (defence industry).,Babcock
+E05,HMS Raleigh (Torpoint),E,RN initial training,T3,51,50.3828,-4.2097,100,air,500,Initial naval training for all ratings. Adjacent to Devonport — probably covered by that strike.,Likely covered by A05 Devonport strike.,RN
+E09,BUTEC Kyle of Lochalsh,E,Underwater test range,T3,52,57.2778,-5.7139,100,air,500,British Underwater Test and Evaluation Centre. Torpedo and sonar testing range in sea loch.,,QinetiQ
+D07,RAF Benson,D,Puma medium helicopter,T2,53,51.6161,-1.0958,100,air,500,Puma HC2 squadrons. Medium helicopter lift and JHC support.,,RAF
+D08,RAF Wittering,D,Logistics + engineering,T2,54,52.6117,-0.4719,100,air,500,"A4 Force HQ. RAF logistics, engineering and force development hub.",,RAF
+D09,RAF Northolt,D,London VIP + mil transport,T2,55,51.5531,-0.4183,100,air,500,32 (The Royal) Sqn VIP transport. London CASEVAC. RAF presence in London outskirts.,,RAF
+D10,RAF Leeming,D,Training + support,T2,56,54.2925,-1.5353,100,air,500,100 Sqn Hawk T1 aggressor/training. 2 MASU. Northern England RAF support hub.,,RAF
+D11,RAF Valley,D,Fast-jet pilot training,T2,57,53.2481,-4.5353,100,air,500,4 FTS Hawk T2. All UK fast-jet pilots train here. Destruction ends pipeline of combat pilots.,,RAF
+D12,RAF Cranwell,D,Officer + flying training,T2,58,53.0306,-0.4828,100,air,500,"RAF College Cranwell. Basic flying training, officer cadet training. RAF's principal training establishment.",,RAF
+D13,RAF Shawbury,D,Rotary wing training,T2,59,52.7983,-2.6681,100,air,500,Defence Helicopter Flying School. All three services train rotary-wing pilots here.,,RAF
+D14,RAF Boulmer,D,Control and Reporting Centre,T2,60,55.4244,-1.5814,100,air,500,Air Surveillance and Control System CRC. Fuses UK radar picture for air defence.,Also cat G.,RAF
+F01,Catterick Garrison,F,Largest UK army garrison,T2,61,54.3778,-1.7244,100,air,500,Largest British Army garrison. Multiple brigades including 1st (UK) Armoured Infantry. Infantry Training Centre.,,British Army
+F02,Aldershot Garrison,F,Home of the British Army,T2,62,51.2528,-0.7583,100,air,500,"Historic Home of the British Army. Garrison HQ, Army training facilities. Paras relocated to Colchester.",,British Army
+F03,Tidworth Garrison,F,3 (UK) Div armoured,T2,63,51.2319,-1.6633,100,air,500,Tidworth/Bulford/Larkhill complex. 3 (UK) Division armoured brigades. Salisbury Plain training area.,"Tidworth, Bulford, Larkhill all in same strike area.",British Army
+F04,Colchester Garrison (Merville Bks),F,16 Air Assault Bde,T2,64,51.8939,0.9114,100,air,500,"Home of 16 Air Assault Brigade — UK's high-readiness rapid reaction force (2 PARA, 3 PARA etc).",,British Army
+F05,Edinburgh Garrison (Redford/Dreghorn),F,Army barracks,T3,65,55.9167,-3.2464,300,air,2000,Redford and Dreghorn barracks. Army presence in Edinburgh.,Covered by Edinburgh city strike (I12).,British Army
+F06,RMA Sandhurst,F,Officer training,T3,66,51.3408,-0.7119,100,air,500,Royal Military Academy Sandhurst. Training all British Army officers — destruction severs pipeline.,,British Army
+F07,Infantry Training Centre Pirbright,F,Phase 1 infantry training,T3,67,51.3172,-0.6317,100,air,500,Phase 1 infantry training. Principal basic training establishment for infantry soldiers.,,British Army
+F08,"Thiepval Bks, Lisburn (HQ 38 Bde)",F,NI Army HQ,T3,68,54.5167,-6.0408,100,air,500,"Thiepval Barracks, Lisburn. HQ 38 (Irish) Brigade. Army HQ for Northern Ireland.",,British Army
+G01,"RRH Saxa Vord (Unst, Shetland)",G,Air defence radar,T2,69,60.825,-0.8517,100,air,500,Northernmost UK radar. Air surveillance over Norwegian Sea and GIUK gap. Recently reactivated 2023.,,RAF
+G02,RRH Benbecula,G,Air defence radar,T2,70,57.48,-7.3633,100,air,500,"Remote Radar Head, Outer Hebrides. Western approaches air defence coverage.",,RAF
+G03,RRH Buchan,G,Air defence radar,T2,71,57.4719,-1.8767,100,air,500,Remote Radar Head Buchan. Scottish east coast air surveillance. Former Master Diversion Airfield.,,RAF
+G04,RRH Brizlee Wood,G,Air defence radar,T3,72,55.4183,-1.8183,100,air,500,Remote Radar Head. NE England coastal air surveillance.,,RAF
+G05,RRH Staxton Wold,G,Air defence radar,T3,73,54.1994,-0.4161,100,air,500,"Remote Radar Head, Yorkshire coast. Oldest continually operated radar site in UK.",,RAF
+L01,Fawley Refinery,L,Oil refinery,T2,74,50.8344,-1.3439,100,air,500,"ExxonMobil Fawley. Largest UK refinery, ~20% capacity. Feeds South England, Heathrow jet fuel. Adjacent Southampton.",,ExxonMobil
+L02,Stanlow Refinery,L,Oil refinery,T2,75,53.2806,-2.8619,100,air,500,"EET Fuels (ex-Essar) Stanlow, Cheshire. Second largest UK refinery. Feeds NW England.",,EET Fuels
+L03,Grangemouth Refinery / Petrochemicals,L,Oil refinery + petrochemicals,T2,76,56.0075,-3.7094,100,air,500,Petroineos Grangemouth. Scotland's only refinery (transitioning 2025+). Only ethylene cracker in Scotland.,Status in transition — may close as refinery.,Petroineos
+L09,South Hook LNG (Milford Haven),L,LNG import terminal,T2,77,51.705,-5.055,100,air,500,QatarEnergy/ExxonMobil. Largest UK LNG import terminal. Critical winter peak-shaving capacity.,Overlap J07.,South Hook LNG
+L10,Isle of Grain LNG (Kent),L,LNG import terminal,T2,78,51.4472,0.7164,100,air,500,National Gas Grain LNG — largest UK LNG storage by volume. Thames Estuary. IFA interconnector nearby.,Overlap M04 Sellindge.,National Gas
+M01,Drax Power Station (N Yorks),M,Biomass power,T2,79,53.7358,-0.9986,100,air,500,Drax — UK's largest power station by capacity (~3.9 GW). ~6% of UK electricity. Biomass + CCS.,,Drax
+K02,Capenhurst (Urenco UK),K,Uranium enrichment,T2,80,53.2617,-2.9444,475,ground,0,Urenco UK centrifuge enrichment plant. Sole UK uranium enrichment capability. Also stores depleted uranium.,,Urenco
+K03,Hinkley Point C (Somerset),K,Nuclear power (new build),T2,81,51.2081,-3.1328,100,ground,0,EDF Hinkley Point C EPR under construction (~7% future UK electricity). Groundburst to contaminate and prevent completion.,Hinkley Point B decommissioning adjacent.,EDF
+K04,Sizewell B + C (Suffolk),K,Nuclear power,T2,82,52.2142,1.62,100,ground,0,Sizewell B PWR (active) + Sizewell C planned. ~3% of current UK electricity.,,EDF
+K05,Heysham 1 + 2 (Lancashire),K,Nuclear power,T2,83,54.0292,-2.9158,100,ground,0,Two active AGR stations. UK's largest nuclear generating site. ~10% of national nuclear capacity.,,EDF
+K06,Hartlepool AGR,K,Nuclear power,T2,84,54.635,-1.1808,100,ground,0,Active AGR station on Teesside. Contributing to grid.,,EDF
+K07,Torness AGR (East Lothian),K,Nuclear power,T2,85,55.9681,-2.4069,100,ground,0,Active AGR station south-east of Edinburgh. Scotland's only currently active nuclear power plant.,,EDF
+L04,Pembroke Refinery (Valero),L,Oil refinery,T2,86,51.6833,-4.9833,100,air,500,"Valero Pembroke, Wales. ~10 million tpa. One of largest European refineries.",,Valero
+L05,Lindsey Oil Refinery (Humber),L,Oil refinery,T2,87,53.64,-0.2014,100,air,500,"Prax Group, North Lincolnshire. Humber refinery complex.",Adjacent to L06.,Prax
+L07,Bacton Gas Terminal (Norfolk),L,Gas import terminal,T2,88,52.8519,1.4494,100,ground,0,North Sea gas plus BBL (NL) and IUK (BE) interconnectors. Second key gas entry point for UK.,,National Gas
+L08,Easington Gas Terminal (E Yorks),L,Gas import terminal,T2,89,53.65,0.14,100,ground,0,Langeled pipeline from Norway terminates here (~20% of UK gas). East Yorkshire coast.,,Equinor
+M04,Sellindge / Folkestone (IFA HVDC),M,UK-France interconnector,T2,90,51.1025,1.0222,100,air,500,IFA and IFA2 UK converter stations. 2 GW to France. Destroying severs major import/export link.,,National Grid
+M07,National Grid ESO Control Centre (Wokingham),M,Grid control,T2,91,51.4011,-0.7953,100,air,500,National Grid Electricity System Operator main control centre. UK transmission system operation.,,NESO
+J01,Port of Felixstowe,J,Container port,T2,92,51.9539,1.3511,100,air,500,Britain's busiest container port. ~40% of UK container trade. Hutchison Ports.,,Felixstowe
+J02,London Gateway,J,Deep-water container port,T2,93,51.5158,0.5,100,air,500,DP World London Gateway. Deep-water container port on Thames. Adjacent data centre park.,,DP World
+J04,Liverpool / Birkenhead (Mersey Docks),J,Atlantic container port,T2,94,53.4419,-3.0069,100,air,500,Mersey Docks container terminal at Seaforth. Main Atlantic container port for NW England.,Covered partly by Liverpool city strike (I07).,Peel Ports
+J05,Port of Immingham,J,Largest UK port by tonnage,T2,95,53.6306,-0.1814,100,air,500,"Largest UK port by tonnage. Oil, coal, bulk cargo. Drax biomass imports.",,ABP
+O01,Slough data centre cluster,O,Hyperscale DC cluster,T2,96,51.5112,-0.595,100,air,500,"Slough Trading Estate: Equinix LD4/LD5/LD6/LD8, Virtus, Digital Realty, Ark. Densest data centre cluster in Europe. AWS, Azure, Google, Oracle European points of presence.",Partly covered by London GZ 3 (I03).,"Uptime Institute, DCD"
+O02,Docklands DC cluster (London),O,Internet exchange + hyperscale,T2,97,51.5083,-0.02,800,air,2000,"Telehouse North/East/West, Equinix LD1-3. LINX core. London main internet interconnect.",Covered by London GZ 1 (I01).,Uptime Institute
+N09,Telehouse / LINX Docklands,N,UK internet exchange,T2,98,51.5081,-0.008,800,air,2000,LINX (London Internet Exchange) primary site at Telehouse North. UK internet traffic interchange. Covered by London GZ 1.,Overlap I01/O02.,LINX
+N02,Oxwich Bay cable landing (S Wales),N,Transatlantic cable,T2,99,51.5519,-4.16,100,air,500,"Amitie, 2Africa and other major cables landing S Wales coast. Growing strategic importance.",,TeleGeography
+N03,Goonhilly Earth Station (Cornwall),N,Satellite + cable,T2,100,50.0472,-5.1825,100,air,500,"Major satellite uplink facility (GEO, MEO, deep space). Adjacent undersea cable landings at Porthcurno.",Also covers nearby Porthcurno.,Goonhilly Earth Station
+H10,QinetiQ Boscombe Down,H,Military flight test,T2,101,51.1519,-1.7472,100,air,500,UK Military Flying Test and Evaluation centre. Empire Test Pilots School. All UK military aircraft cleared here.,,QinetiQ
+H11,DSTL Porton Down,H,CBRN defence research,T2,102,51.1233,-1.7014,100,air,500,Defence Science and Technology Laboratory. Chemical and biological defence research. Historic significance.,,DSTL
+H05,Thales UK Glasgow (Linthouse),H,Sonar + optronics,T3,103,55.8778,-4.2361,100,air,500,"Thales UK. Sonar suites for RN submarines, optronic mast systems, ship radar.",,Thales UK
+H07,MBDA Lostock (Bolton),H,Missile production,T3,104,53.5869,-2.4617,100,air,500,MBDA production facility. CAMM/Sea Ceptor manufacture.,,MBDA
+H08,Leonardo UK Edinburgh (Crewe Toll),H,Airborne radars + EW,T3,105,55.9344,-3.2692,300,air,2000,"Captor-E/M radar (Typhoon/F-35), Osprey AESA, DAS systems. Sole UK airborne radar OEM.",Covered by Edinburgh city strike (I12).,Leonardo UK
+H09,Leonardo UK Luton,H,Defensive aids + EW,T3,106,51.8797,-0.4047,100,air,500,"Defensive Aids Sub-System, laser warning, EW systems for UK combat aircraft.",,Leonardo UK
+H12,QinetiQ Farnborough,H,Defence research HQ,T3,107,51.2833,-0.75,100,air,500,QinetiQ HQ. Historic RAE site. Wide-spectrum defence R&D.,,QinetiQ
+H13,QinetiQ Portsdown Technology Park,H,Maritime sensors + underwater R&D,T3,108,50.8533,-1.1086,100,air,500,"Maritime sensor systems, underwater weapons research. Portsdown West site.",Portsmouth area — overlap with HMNB strike.,QinetiQ
+H14,QinetiQ Aberporth,H,Weapons test range,T3,109,52.1389,-4.5683,100,air,500,"West Wales test range. Air-to-surface and air-to-ground weapons qualification, UAV trials.",,QinetiQ
+H15,"Rolls-Royce Sinfin, Derby",H,Aero engine manufacturing,T3,110,52.8953,-1.4839,300,air,2000,Rolls-Royce aero engine manufacture (EJ200 for Typhoon). Derby — overlap with Raynesway (A07) and Derby city (I20).,Covered partly by Derby/A07 strikes.,Rolls-Royce
+G06,RRH Portreath,G,Air defence radar,T3,111,50.2508,-5.2878,100,air,500,Remote Radar Head. South-west approaches air coverage.,,RAF
+G09,DIS Chicksands,G,Defence Intelligence,T3,112,52.0258,-0.3814,100,air,500,Defence Intelligence Security Centre / DISC. Former NSA/GCHQ Chicksands site. Military intelligence training.,,MoD
+D15,RAF Spadeadam,D,Electronic warfare range,T3,113,55.0306,-2.55,100,air,500,Largest electronic warfare tactics range in Europe. EW training for NATO fast jets.,,RAF
+J06,Port of Dover,J,Cross-Channel ferry,T2,114,51.1261,1.3139,100,air,500,~40% of UK ro-ro freight with the continent. Cross-Channel chokepoint.,,Port of Dover
+J07,Milford Haven,J,LNG + oil port,T2,115,51.7097,-5.0461,100,air,500,UK's 2nd largest port by tonnage. South Hook and Dragon LNG terminals. Valero refinery.,"Overlap L10, L11, L04.",Milford Haven Port Authority
+J03,Port of Tilbury,J,General cargo + container,T3,116,51.4667,0.35,100,air,500,Port of Tilbury. London's primary grain and bulk port. ro-ro and container.,,Forth Ports
+J08,Port of Grimsby,J,Humber port,T3,117,53.5742,-0.0714,100,air,500,Humber estuary. Adjacent to Immingham. Ro-ro and bulk.,,ABP
+J09,Belfast Harbour,J,NI main port,T3,118,54.6167,-5.9,300,air,2000,Main Northern Ireland port. Harland and Wolff adjacent (Spirit Aero/H&W repair).,Covered by Belfast city strike (I14).,Belfast Harbour Commissioners
+M02,"Dinorwig (Llanberis, N Wales)",M,Pumped storage,T3,119,53.1194,-4.1133,100,air,500,"Electric Mountain pumped storage, 1.7 GW. Critical for grid frequency stability during peak demand.",,Engie
+M03,Cruachan (Argyll),M,Pumped storage,T3,120,56.3942,-5.115,100,air,500,"Hollow Mountain pumped storage, 440 MW. Scottish grid stability.",,Drax
+M05,Richborough (Nemo Link),M,UK-Belgium interconnector,T3,121,51.2883,1.3261,100,air,500,"Nemo Link 1 GW HVDC converter station at Richborough, Kent. UK-Belgium.",,National Grid
+M06,Bicker Fen (Viking Link),M,UK-Denmark interconnector,T3,122,52.9275,-0.1022,100,air,500,"Viking Link 1.4 GW HVDC converter station near Boston, Lincs. UK-Denmark.",,National Grid
+M08,Iron Acton 400kV Substation,M,400 kV super-grid node,T3,123,51.55,-2.475,100,air,500,"Major 400 kV super-grid node, South Gloucestershire. SW England grid hub.",,National Grid
+O03,Farnborough / Fleet DC cluster (Ark Zeta),O,Secure/gov DC,T2,124,51.2839,-0.7681,100,air,500,Ark Data Centres Farnborough Zeta / Leap DC. Major public-sector and defence-adjacent cloud hosting.,Overlap H12 QinetiQ Farnborough.,Ark
+N04,Highbridge / Brean (Somerset),N,Cable landing,T3,125,51.2972,-3.0208,100,air,500,TAT-14 Bristol Channel landing point at Brean. Secondary transatlantic route.,,TeleGeography
+N05,Lowestoft cable landing (Suffolk),N,N Sea + Scandinavian cables,T3,126,52.475,1.75,100,air,500,Scandinavian and North Sea cable landings. East Anglia coast.,,TeleGeography
+N06,Winterton-on-Sea cable landing (Norfolk),N,N Sea cables,T3,127,52.7139,1.6972,100,air,500,"Pan-European and North Sea cable landings, Norfolk coast.",,TeleGeography
+N07,Holyhead cable landing (Anglesey),N,Ireland cables,T3,128,53.3089,-4.6333,100,air,500,Cable landing connecting UK-Ireland. Severs critical cross-Irish Sea links.,,TeleGeography
+N08,Scrabster / Thurso cable landing (Caithness),N,Nordic cables,T3,129,58.6128,-3.5444,100,air,500,Far-north cable landings connecting UK-Iceland-Faroes-Scandinavia.,,TeleGeography
+O04,Park Royal DC cluster (West London),O,Colocation,T3,130,51.5269,-0.2836,100,air,500,"West London DC cluster: Global Switch Park Royal, Pulsant. London overspill capacity.",Partly covered by London GZ 3 (I03).,DCD
+O05,Equinix Manchester MA1+,O,N England DC,T3,131,53.4856,-2.2944,300,air,2000,Equinix Manchester data centre cluster. Primary cloud on-ramp for NW England.,Covered by Manchester city strike (I05).,Equinix
+O06,NGD Newport / Vantage (S Wales),O,Large DC,T3,132,51.5814,-3.0081,100,air,500,"Next Generation Data / Vantage Newport. One of Europe's largest single-site data centres. AWS, UK Gov data.",,Vantage
+O07,STACK Infrastructure (West Drayton / Hayes),O,Hyperscale DC,T3,133,51.51,-0.48,100,air,500,Large west London hyperscale campus. Near Heathrow. Major cloud anchor.,Partly covered by London GZ 3.,STACK
+L11,Dragon LNG (Milford Haven),L,LNG import terminal,T3,134,51.6956,-5.0358,100,air,500,Second Milford Haven LNG terminal. Shell/Ancala. Adjacent to South Hook.,,Dragon LNG
+L12,Sullom Voe Oil Terminal (Shetland),L,Oil terminal,T3,135,60.4558,-1.3239,100,air,500,North Sea and West of Shetland oil terminal. BP-operated. Critical to N Sea production.,,BP
+L13,Flotta Oil Terminal (Orkney),L,Oil terminal,T3,136,58.8333,-3.1333,100,air,500,"Repsol/Repsol Sinopec oil terminal, Orkney. Piper/Claymore/Flotta field output.",,Repsol
+K08,Dungeness B (Kent),K,Nuclear power (defuelling),T3,137,50.9136,0.9614,100,ground,0,AGR in defuelling phase. Spent fuel on site — contamination risk.,,EDF
+K09,Bradwell (Essex),K,Nuclear decommissioning,T3,138,51.7431,0.8958,100,ground,0,"Magnox decommissioning, Essex coast. Spent fuel in interim storage.",,NDA
+K10,Trawsfynydd (N Wales),K,Nuclear decommissioning,T3,139,52.9236,-3.9467,100,ground,0,Magnox decommissioning. Proposed SMR candidate site. Radioactive inventory on site.,,NDA
+K11,Chapelcross (Dumfriesshire),K,Nuclear decommissioning,T3,140,55.0167,-3.2361,100,ground,0,Former Magnox. Historically produced tritium for nuclear weapons. Decommissioning.,,NDA
+K12,Dounreay (Caithness),K,Nuclear decommissioning,T3,141,58.5789,-3.7519,100,ground,0,Historic fast-reactor site. Significant radioactive inventory in decommissioning. Remote but significant.,,NDA
+M09,Wylfa (Anglesey),M,Nuclear decom + major grid node,T3,142,53.4167,-4.4833,100,ground,0,Wylfa Magnox decommissioning and 400 kV super-grid substation. Future large-scale nuclear candidate site.,,"NDA, National Grid"
+J10,Greenock / Clydeport,J,Clyde container port,T3,143,55.9533,-4.7667,100,air,500,Clydeport Greenock Ocean Terminal. Container and cruise. Clyde approaches.,,Peel Ports
+C11,"Scottish Parliament, Holyrood",C,Devolved administration,T2,144,55.9522,-3.1758,300,air,2000,Scottish Parliament and government. Political decapitation of Scotland.,Covered by Edinburgh city strike (I12).,
+C12,"Senedd / Senedd Cymru, Cardiff",C,Devolved administration,T2,145,51.4642,-3.1628,300,air,2000,Welsh Parliament and government. Political decapitation of Wales.,Covered by Cardiff city strike (I13).,
+C13,"Stormont, Belfast",C,Devolved administration,T2,146,54.6042,-5.8344,300,air,2000,Northern Ireland Assembly and Executive. Political decapitation of Northern Ireland.,Covered by Belfast city strike (I14).,
+I01,London — City / East,I,Financial + Docklands,T3,147,51.5144,-0.0919,800,air,2000,"City of London financial district, Bank of England, Docklands data centres. GZ 1 of 3 for London.",Multi-GZ pattern with I02 and I03.,ONS
+I02,London — Westminster / Whitehall,I,Government centre,T3,148,51.5007,-0.1246,800,air,2000,"Parliament, Whitehall, Downing St, MoD, PINDAR, MI5, MI6. GZ 2 of 3 for London. Decapitates UK government.","Covers C01, C08, C09.",ONS
+I03,London — West / Slough corridor,I,Industry + data centre cluster,T3,149,51.47,-0.38,800,air,2000,West London industrial + transport + Slough data centre cluster. GZ 3 of 3 for London.,Covers O01 (Slough DCs) and Heathrow (P01) on periphery.,ONS
+I04,Birmingham,I,2nd largest city,T3,150,52.4862,-1.8904,300,air,2000,2nd largest UK city (~1.15M). Midlands industrial and commercial heartland.,,ONS
+I05,Manchester,I,NW England regional capital,T3,151,53.4808,-2.2426,300,air,2000,"Greater Manchester ~2.9M. NW England economic hub. Major logistics, tech and media centre.",,ONS
+I06,Glasgow,I,Scotland's largest city,T3,152,55.8642,-4.2518,300,air,2000,Greater Glasgow ~1.85M. Scotland's largest urban area. Naval shipbuilding on the Clyde.,Covers H03/H04 Govan/Scotstoun shipyards.,ONS
+I07,Liverpool,I,NW England port city,T3,153,53.4084,-2.9916,300,air,2000,Merseyside ~1.4M. Major Atlantic port and container terminal. Regional industrial hub.,,ONS
+I08,Leeds,I,Yorkshire financial centre,T3,154,53.8008,-1.5491,300,air,2000,"West Yorkshire financial and commercial centre. ~800k city, ~1.8M metro.",,ONS
+I09,Sheffield,I,Steel and engineering,T3,155,53.3811,-1.4701,300,air,2000,Historic steel and engineering city. Advanced manufacturing cluster. Pop ~580k.,,ONS
+I10,Bristol,I,SW England aerospace,T3,156,51.4545,-2.5879,300,air,2000,"Aerospace industry (Airbus Filton, GKN). Port of Bristol. Pop ~470k.",,ONS
+I11,Newcastle upon Tyne,I,NE England regional capital,T3,157,54.9783,-1.6178,300,air,2000,Tyneside conurbation ~780k. NE regional capital.,,ONS
+I12,Edinburgh,I,Scottish capital,T3,158,55.9533,-3.1883,300,air,2000,Scotland's capital. Financial services hub. ~510k city. Scottish Parliament (C12) nearby.,Covers C12 Holyrood and H08 Leonardo.,ONS
+I13,Cardiff,I,Welsh capital,T3,159,51.4816,-3.1791,300,air,2000,Capital of Wales. Administrative and commercial centre. ~365k city.,Covers C13 Senedd.,ONS
+I14,Belfast,I,NI capital,T3,160,54.5973,-5.9301,300,air,2000,"Capital of Northern Ireland. Aerospace industry (Spirit Aero, former Short Brothers). ~345k.",Covers C14 Stormont.,ONS
+I15,Nottingham,I,East Midlands,T3,161,52.9548,-1.1581,300,air,2000,East Midlands regional centre. ~330k city. Pharmaceutical manufacturing.,,ONS
+I16,Southampton,I,S coast port city,T3,162,50.9097,-1.4044,300,air,2000,"South coast port — container, cruise and ro-ro. Pop ~270k. Adjacent Fawley refinery.",Overlap with J01/L01.,ONS
+I17,Portsmouth,I,RN city,T3,163,50.8198,-1.088,300,air,2000,Royal Navy HQ city. Pop ~215k. Probably covered by HMNB Portsmouth strike.,Overlap E01/C05.,ONS
+I18,Plymouth,I,SW naval city,T3,164,50.3755,-4.1427,300,air,2000,UK's largest naval city. Pop ~264k. Largely covered by HMNB Devonport strike.,Overlap A05.,ONS
+I19,Leicester,I,East Midlands,T3,165,52.6369,-1.1398,300,air,2000,East Midlands manufacturing and commercial city. Pop ~370k.,,ONS
+I20,Coventry,I,Midlands engineering,T3,166,52.4068,-1.5197,300,air,2000,West Midlands automotive and engineering. Pop ~345k. Rebuilt after WWII blitz.,,ONS
+I21,Stoke-on-Trent,I,Midlands industrial,T3,167,53.0027,-2.1794,300,air,2000,Midlands industrial city. Pop ~260k.,,ONS
+I22,Wolverhampton,I,West Midlands,T3,168,52.5862,-2.1282,300,air,2000,West Midlands industrial city. Pop ~260k. Engineering and manufacturing.,,ONS
+I23,Derby,I,Aerospace + rail engineering,T3,169,52.9225,-1.4746,300,air,2000,"Rolls-Royce HQ, Toyota, Bombardier trains. Pop ~260k. Overlap with A07 Raynesway.","Overlap A07, H15.",ONS
+I24,Reading,I,Thames Valley tech hub,T3,170,51.4543,-0.9781,300,air,2000,Thames Valley tech corridor HQ cluster. Pop ~320k. 10 miles from AWE Aldermaston.,,ONS
+I25,Milton Keynes,I,New city,T3,171,52.0406,-0.7594,300,air,2000,"New city, logistics hub. Pop ~290k. Strategic road junction (M1/A5).",,ONS
+I26,Cambridge,I,Science and tech cluster,T3,172,52.2053,0.1218,300,air,2000,"Cambridge science and biotech cluster. ARM Holdings, AstraZeneca, Mott MacDonald. Pop ~145k.",,ONS
+I27,Oxford,I,Academic and tech,T3,173,51.752,-1.2577,300,air,2000,University and tech cluster. BMW MINI plant. Pop ~160k.,,ONS
+I28,Swansea,I,South Wales,T3,174,51.6214,-3.9436,300,air,2000,South Wales industrial and port city. Pop ~240k.,,ONS
+I29,Aberdeen,I,North Sea oil capital,T3,175,57.1497,-2.0943,300,air,2000,North Sea oil and gas industry hub. Port and logistics. Pop ~200k.,,ONS
+I30,Dundee,I,East Scotland,T3,176,56.462,-2.9707,300,air,2000,"Scottish east coast city. Tech sector (video games — Rockstar/DC Thompson), biomedical. Pop ~150k.",,ONS
+I31,Kingston upon Hull,I,E Yorkshire port,T3,177,53.7456,-0.3367,300,air,2000,Humber estuary port city. Siemens wind turbine manufacture. Pop ~260k.,,ONS
+I32,Middlesbrough / Teesside,I,Industrial NE,T3,178,54.5742,-1.2349,300,air,2000,"Teesside industrial conurbation. Steel, chemicals, Wilton industrial complex. ~300k area.",,ONS
+I33,Sunderland,I,NE England,T3,179,54.9069,-1.3833,300,air,2000,NE port city. Nissan UK car plant — largest single car factory in UK. Pop ~275k.,,ONS
+I34,Preston,I,Lancashire,T3,180,53.7632,-2.7031,300,air,2000,Lancashire city. Near BAE Warton (H01) and Samlesbury (H02). Pop ~140k.,,ONS
+I35,Brighton and Hove,I,South coast,T3,181,50.8225,-0.1372,300,air,2000,"South coast. ~280k. University city, secondary commuter city for London.",,ONS
+I36,Bournemouth / Poole,I,South coast conurbation,T3,182,50.7192,-1.8808,300,air,2000,South coast conurbation ~470k including Christchurch. SBS HQ at Poole (C11).,Overlap C11 Poole SBS.,ONS
+I37,Norwich,I,East Anglia,T3,183,52.6309,1.2974,300,air,2000,East Anglia regional centre. ~145k. Insurance/financial sector.,,ONS
+I38,York,I,Yorkshire,T3,184,53.96,-1.0873,300,air,2000,"North Yorkshire. ~210k. Railway engineering (National Railway Museum, train maintenance).",,ONS
+I39,Peterborough,I,East,T3,185,52.5695,-0.2405,300,air,2000,Eastern England logistics hub. ~215k. A1/East Coast Main Line junction.,,ONS
+P01,London Heathrow (LHR),P,Primary UK hub airport,T3,186,51.47,-0.4543,100,air,500,UK's primary international hub. ~80M pax/year. Strategic airlift capability. Jet fuel depot.,Partly covered by London GZ 3 (I03).,Heathrow
+P02,London Gatwick (LGW),P,Secondary London hub,T3,187,51.1537,-0.1821,100,air,500,2nd London airport. ~45M pax. Backup international routing.,,Gatwick
+P03,East Midlands Airport (EMA),P,DHL/UPS cargo hub,T3,188,52.8311,-1.3281,100,air,500,"UK's largest pure-cargo airport (DHL, UPS, Royal Mail). Strategic logistics vulnerability.",,EMA
+P04,Manchester Airport (MAN),P,N England hub,T3,189,53.3537,-2.275,300,air,2000,Primary airport for N England and Scotland. ~28M pax. Adjacent to Manchester.,Covered by Manchester city strike (I05).,MAG
+P05,Prestwick Airport (PIK),P,NATO diversion + USAF transit,T3,190,55.5094,-4.5867,100,air,500,NATO designated diversion airfield. USAF transatlantic transit hub. Historically: Cold War strategic use.,,Prestwick Airport
+P06,Edinburgh Airport (EDI),P,Scotland hub,T3,191,55.95,-3.3725,300,air,2000,Busiest Scottish airport. Adjacent to Edinburgh city.,Covered by Edinburgh city strike (I12).,Edinburgh Airport
+P07,Belfast International / Aldergrove (BFS),P,NI airport + military,T3,192,54.6575,-6.2158,100,air,500,"Belfast International. Former RAF Aldergrove, 5 Regiment Army Air Corps present. Military-civil dual use.",,Belfast Airport
+P08,London Stansted (STN),P,London NE airport + cargo,T3,193,51.885,0.235,100,air,500,Low-cost hub and freight. Amazon Air UK hub.,,Stansted
