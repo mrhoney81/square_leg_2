@@ -234,6 +234,7 @@
   <div id="map"></div>
 
   <div class="downloads">
+    <button onclick="openNukemap()">Open in NUKEMAP (works up to 80)</button>
     <button onclick="downloadNukemap()">Download NUKEMAP CSV</button>
     <button onclick="downloadKML()">Download KML (Google Earth)</button>
     <button onclick="downloadCSV()">Download full CSV</button>
@@ -617,6 +618,40 @@ function update() {
       <div class="card-rationale">${t.rationale}</div>
     </div>`;
   }).join('');
+}
+
+// --- NUKEMAP direct URL ---
+
+function openNukemap() {
+  const { selected } = getSelected();
+  if (selected.length === 0) return;
+
+  const M_TO_FT = 3.28084;
+  // Do NOT use URLSearchParams — it percent-encodes brackets as %5B/%5D which breaks NUKEMAP's parser
+  let query = '';
+
+  selected.forEach((t, i) => {
+    const hob_ft = Math.round(t.height_m * M_TO_FT);
+    const airburst = hob_ft > 0 ? 1 : 0;
+    const fallout = t.burst === 'ground' ? 1 : 0;
+    // Set every parameter explicitly on every detonation — NUKEMAP leaks values between detonations
+    query += `&kt[${i}]=${t.yield_kt}`;
+    query += `&lat[${i}]=${t.lat}`;
+    query += `&lng[${i}]=${t.lon}`;
+    query += `&hob_ft[${i}]=${hob_ft}`;
+    query += `&airburst[${i}]=${airburst}`;
+    query += `&fallout[${i}]=${fallout}`;
+    query += `&ff[${i}]=50`;
+    if (fallout) {
+      query += `&fallout_wind[${i}]=15`;
+      query += `&fallout_angle[${i}]=225`;
+    }
+  });
+
+  // zm is mandatory — crashes without it. Use 6 for country-scale, 8 for small sets.
+  query += `&zm=${selected.length <= 5 ? 8 : 6}`;
+
+  window.open(`https://nuclearsecrecy.com/nukemap/?${query.substring(1)}`, '_blank');
 }
 
 // --- Downloads ---
